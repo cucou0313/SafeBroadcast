@@ -61,8 +61,10 @@ namespace SafeBroadcast
             {
                 ShowForm sf = new ShowForm();
                 sf.ShowDialog();
-                //在主页面进行子页视频关闭操作，直接在子页退出前关闭视频会卡死
-                PublicArgs.MyVlc.Stop();
+                if (PublicArgs.MyVlc != null)
+                {
+                    PublicArgs.MyVlc.Stop();
+                }
             }
             else
             {

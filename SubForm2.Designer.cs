@@ -495,7 +495,7 @@
             this.inform_richtext.Location = new System.Drawing.Point(0, 85);
             this.inform_richtext.Margin = new System.Windows.Forms.Padding(4);
             this.inform_richtext.Name = "inform_richtext";
-            this.inform_richtext.Size = new System.Drawing.Size(1092, 346);
+            this.inform_richtext.Size = new System.Drawing.Size(1092, 339);
             this.inform_richtext.TabIndex = 55;
             this.inform_richtext.Text = "";
             // 
@@ -504,13 +504,13 @@
             this.duty_label.BackColor = System.Drawing.SystemColors.ControlText;
             this.duty_label.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.duty_label.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.duty_label.Font = new System.Drawing.Font("微软雅黑", 34F, System.Drawing.FontStyle.Bold);
+            this.duty_label.Font = new System.Drawing.Font("微软雅黑", 38F, System.Drawing.FontStyle.Bold);
             this.duty_label.ForeColor = System.Drawing.Color.Cyan;
-            this.duty_label.Location = new System.Drawing.Point(0, 431);
+            this.duty_label.Location = new System.Drawing.Point(0, 424);
             this.duty_label.Name = "duty_label";
-            this.duty_label.Size = new System.Drawing.Size(1092, 60);
+            this.duty_label.Size = new System.Drawing.Size(1092, 67);
             this.duty_label.TabIndex = 54;
-            this.duty_label.Text = "值班主任：xxx  技术带班：xxx，xxx  网管值班：xxx  编播值班：xxx";
+            this.duty_label.Text = "值班主任：xxx  技术带班：xxx，xxx  网管：xxx  编委办：xxx";
             this.duty_label.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // header_label

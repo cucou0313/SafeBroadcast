@@ -29,7 +29,7 @@ namespace SafeBroadcast
         //视频文件地址
         public static string vedio_filepath = "";
         public static int volume = 0;
-        public static VlcPlayer.VlcPlayerBase MyVlc;
+        public static VlcPlayer.VlcPlayerBase MyVlc = null;
         //各子页的停留时间
         public static int[] page_stay = new int[3];
 

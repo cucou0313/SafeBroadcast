@@ -60,7 +60,7 @@
             this.Time_Panel.Controls.Add(this.Time_LedLabel);
             this.Time_Panel.Controls.Add(this.uiLine1);
             this.Time_Panel.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Time_Panel.Location = new System.Drawing.Point(50, 0);
+            this.Time_Panel.Location = new System.Drawing.Point(50, 50);
             this.Time_Panel.Name = "Time_Panel";
             this.Time_Panel.Size = new System.Drawing.Size(1804, 235);
             this.Time_Panel.TabIndex = 0;
@@ -121,7 +121,7 @@
             // 
             this.duty_Label.BackColor = System.Drawing.Color.Transparent;
             this.duty_Label.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.duty_Label.Font = new System.Drawing.Font("微软雅黑", 34F, System.Drawing.FontStyle.Bold);
+            this.duty_Label.Font = new System.Drawing.Font("微软雅黑", 38F, System.Drawing.FontStyle.Bold);
             this.duty_Label.ForeColor = System.Drawing.Color.Cyan;
             this.duty_Label.Location = new System.Drawing.Point(50, 954);
             this.duty_Label.Name = "duty_Label";
@@ -135,9 +135,9 @@
             this.Main_Panel.Controls.Add(this.My_Panel);
             this.Main_Panel.Controls.Add(this.uiLine2);
             this.Main_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Main_Panel.Location = new System.Drawing.Point(50, 235);
+            this.Main_Panel.Location = new System.Drawing.Point(50, 285);
             this.Main_Panel.Name = "Main_Panel";
-            this.Main_Panel.Size = new System.Drawing.Size(1804, 719);
+            this.Main_Panel.Size = new System.Drawing.Size(1804, 669);
             this.Main_Panel.TabIndex = 96;
             // 
             // My_Panel
@@ -148,7 +148,7 @@
             this.My_Panel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.My_Panel.Location = new System.Drawing.Point(0, 60);
             this.My_Panel.Name = "My_Panel";
-            this.My_Panel.Size = new System.Drawing.Size(1804, 659);
+            this.My_Panel.Size = new System.Drawing.Size(1804, 609);
             this.My_Panel.TabIndex = 2;
             // 
             // panel10
@@ -158,7 +158,7 @@
             this.panel10.Controls.Add(this.tright_panel);
             this.panel10.Controls.Add(this.tleft_panel);
             this.panel10.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel10.Location = new System.Drawing.Point(0, 186);
+            this.panel10.Location = new System.Drawing.Point(0, 216);
             this.panel10.Name = "panel10";
             this.panel10.Padding = new System.Windows.Forms.Padding(0, 30, 0, 0);
             this.panel10.Size = new System.Drawing.Size(1804, 116);
@@ -203,7 +203,8 @@
             this.panel7.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel7.Location = new System.Drawing.Point(0, 100);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1804, 86);
+            this.panel7.Padding = new System.Windows.Forms.Padding(0, 30, 0, 0);
+            this.panel7.Size = new System.Drawing.Size(1804, 116);
             this.panel7.TabIndex = 30;
             // 
             // MainLabel
@@ -213,7 +214,7 @@
             this.MainLabel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.MainLabel.Font = new System.Drawing.Font("微软雅黑", 48F, System.Drawing.FontStyle.Bold);
             this.MainLabel.ForeColor = System.Drawing.Color.DeepPink;
-            this.MainLabel.Location = new System.Drawing.Point(10, 0);
+            this.MainLabel.Location = new System.Drawing.Point(10, 30);
             this.MainLabel.Name = "MainLabel";
             this.MainLabel.Size = new System.Drawing.Size(165, 86);
             this.MainLabel.TabIndex = 14;
@@ -223,7 +224,7 @@
             // mright_panel
             // 
             this.mright_panel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.mright_panel.Location = new System.Drawing.Point(1794, 0);
+            this.mright_panel.Location = new System.Drawing.Point(1794, 30);
             this.mright_panel.Name = "mright_panel";
             this.mright_panel.Size = new System.Drawing.Size(10, 86);
             this.mright_panel.TabIndex = 13;
@@ -231,7 +232,7 @@
             // mleft_panel
             // 
             this.mleft_panel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.mleft_panel.Location = new System.Drawing.Point(0, 0);
+            this.mleft_panel.Location = new System.Drawing.Point(0, 30);
             this.mleft_panel.Name = "mleft_panel";
             this.mleft_panel.Size = new System.Drawing.Size(10, 86);
             this.mleft_panel.TabIndex = 0;
@@ -275,7 +276,7 @@
             this.Controls.Add(this.duty_Label);
             this.Controls.Add(this.Time_Panel);
             this.Name = "FirstScreen";
-            this.Padding = new System.Windows.Forms.Padding(50, 0, 50, 0);
+            this.Padding = new System.Windows.Forms.Padding(50, 50, 50, 0);
             this.PageIndex = 2001;
             this.Style = Sunny.UI.UIStyle.Custom;
             this.Text = "FirstScreen";

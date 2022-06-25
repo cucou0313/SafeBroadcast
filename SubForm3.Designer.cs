@@ -46,7 +46,7 @@
             this.PlayButton = new Sunny.UI.UISymbolButton();
             this.VolumeBar = new Sunny.UI.UITrackBar();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.VideoProcessBar = new Sunny.UI.UITrackBar();
+            this.PlayTrackBar = new System.Windows.Forms.TrackBar();
             this.NowTime = new System.Windows.Forms.Label();
             this.FullTime = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -59,6 +59,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.VideoPic)).BeginInit();
             this.BottomPanel.SuspendLayout();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PlayTrackBar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.SuspendLayout();
             // 
@@ -295,7 +296,7 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.VideoProcessBar);
+            this.panel2.Controls.Add(this.PlayTrackBar);
             this.panel2.Controls.Add(this.NowTime);
             this.panel2.Controls.Add(this.FullTime);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -305,17 +306,14 @@
             this.panel2.Size = new System.Drawing.Size(1034, 32);
             this.panel2.TabIndex = 4;
             // 
-            // VideoProcessBar
+            // PlayTrackBar
             // 
-            this.VideoProcessBar.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.VideoProcessBar.Font = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.VideoProcessBar.Location = new System.Drawing.Point(50, 5);
-            this.VideoProcessBar.MinimumSize = new System.Drawing.Size(1, 1);
-            this.VideoProcessBar.Name = "VideoProcessBar";
-            this.VideoProcessBar.ReadOnly = true;
-            this.VideoProcessBar.Size = new System.Drawing.Size(934, 22);
-            this.VideoProcessBar.TabIndex = 99;
-            this.VideoProcessBar.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            this.PlayTrackBar.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.PlayTrackBar.Location = new System.Drawing.Point(50, 5);
+            this.PlayTrackBar.Name = "PlayTrackBar";
+            this.PlayTrackBar.Size = new System.Drawing.Size(934, 22);
+            this.PlayTrackBar.TabIndex = 120;
+            this.PlayTrackBar.Scroll += new System.EventHandler(this.PlayTrackBar_Scroll);
             // 
             // NowTime
             // 
@@ -374,6 +372,7 @@
             this.BottomPanel.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PlayTrackBar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.ResumeLayout(false);
 
@@ -401,7 +400,7 @@
         private System.Windows.Forms.Timer PlayTimer;
         private Sunny.UI.UITrackBar VolumeBar;
         private Sunny.UI.UISymbolButton StopButton;
-        private Sunny.UI.UITrackBar VideoProcessBar;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TrackBar PlayTrackBar;
     }
 }

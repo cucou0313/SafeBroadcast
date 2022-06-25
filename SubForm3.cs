@@ -14,14 +14,14 @@ namespace SafeBroadcast
 {
     public partial class SubForm3 : UIPage
     {
-        private VlcPlayer.VlcPlayerBase MyVlc;
+        private VlcPlayer.VlcPlayerBase PreVlc = null;
         public SubForm3()
         {
             InitializeComponent();
             //加载运行时文件夹的VLC库
-            MyVlc = new VlcPlayer.VlcPlayerBase(Path.Combine(Environment.CurrentDirectory, "plugins"));
+            PreVlc = new VlcPlayer.VlcPlayerBase(Path.Combine(Environment.CurrentDirectory, "plugins"));
             //将视频流输出到指定控件的句柄
-            MyVlc.SetRenderWindow(VideoPic.Handle.ToInt32());
+            PreVlc.SetRenderWindow(VideoPic.Handle.ToInt32());
         }
 
         private void uiSwitch1_ActiveChanged(object sender, EventArgs e)
@@ -41,41 +41,40 @@ namespace SafeBroadcast
             if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
                 video_path = dialog.FileName;
-                MyVlc.LoadFile(video_path);
+                PreVlc.LoadFile(video_path);
                 PublicArgs.vedio_filepath = video_path;
-                video_duration = (int)MyVlc.Duration;
+                video_duration = (int)PreVlc.Duration;
                 //本页停留时长匹配视频时长
                 Page3_UpDown.Value = video_duration;
                 //进度条上限
-                VideoProcessBar.Maximum = video_duration;
+                PlayTrackBar.Maximum = video_duration;
                 FullTime.Text = SecondParser(video_duration);
                 BottomPanel.Enabled = true;
 
                 PlayButton.Symbol = 61516;
                 PlayTimer.Start();
-                MyVlc.Play();
+                PreVlc.Play();
             }
         }
 
         private void PlayButton_Click(object sender, EventArgs e)
         {
-            if (MyVlc.IsPlaying)
+            if (PreVlc.IsPlaying)
             {
-                MyVlc.Pause();
-                //PlayTimer.Stop();
+                PreVlc.Pause();
             }
             else
             {
-                MyVlc.Play();
+                PreVlc.Play();
             }
             PlayButton.Symbol = PlayButton.Symbol == 61515 ? 61516 : 61515;
         }
 
         private void StopButton_Click(object sender, EventArgs e)
         {
-            MyVlc.Stop();
+            PreVlc.Stop();
             PlayButton.Symbol = 61515;
-            VideoProcessBar.Value = 0;
+            PlayTrackBar.Value = 0;
         }
 
         private void Page3_UpDown_ValueChanged(object sender, int value)
@@ -90,12 +89,6 @@ namespace SafeBroadcast
             }
         }
 
-        private void VideoProcessBar_ValueChanged(object sender, EventArgs e)
-        {
-            //NowTime.Text = SecondParser(VideoProcessBar.Value);
-            //MyVlc.SetPlayTime(VideoProcessBar.Value);
-        }
-
         public static string SecondParser(int seconds)
         {
             int min = seconds / 60;
@@ -103,34 +96,34 @@ namespace SafeBroadcast
             string m = "0";
             string s = "0";
             if (min < 10)
-            {
                 m += min;
-            }
             else
-            {
                 m = min.ToString();
-            }
             if (sec < 10)
-            {
                 s += sec;
-            }
             else
-            {
                 s = sec.ToString();
-            }
             return m + ":" + s;
+        }
+
+        private void PlayTrackBar_Scroll(object sender, EventArgs e)
+        {
+            PlayTimer.Enabled = false;
+            NowTime.Text = SecondParser(PlayTrackBar.Value);
+            PreVlc.SetPlayTime(PlayTrackBar.Value);
+            PlayTimer.Enabled = true;
         }
 
         private void PlayTimer_Tick(object sender, EventArgs e)
         {
-            int now_play_time = (int)MyVlc.GetPlayTime();
+            int now_play_time = (int)PreVlc.GetPlayTime();
             NowTime.Text = SecondParser(now_play_time);
-            VideoProcessBar.Value = now_play_time;
+            PlayTrackBar.Value = now_play_time;
         }
 
         private void VolumeBar_ValueChanged(object sender, EventArgs e)
         {
-            MyVlc.SetVolume(VolumeBar.Value);
+            PreVlc.SetVolume(VolumeBar.Value);
             PublicArgs.volume = VolumeBar.Value;
         }
 
@@ -139,11 +132,12 @@ namespace SafeBroadcast
             if (objects.Length == 1)
             {
                 if (Page3_UpDown.Value <= 0)
-                {
                     return false;
-                }
                 //进入展示前关闭预览
-                StopButton.PerformClick();
+                if (PreVlc != null)
+                    PreVlc.Stop();
+                PlayButton.Symbol = 61515;
+                PlayTrackBar.Value = 0;
                 PublicArgs.volume = VolumeBar.Value;
                 PublicArgs.page_stay[2] = uiSwitch1.Active ? Page3_UpDown.Value : 0;
                 return true;
@@ -153,5 +147,6 @@ namespace SafeBroadcast
                 return false;
             }
         }
+
     }
 }

@@ -49,7 +49,7 @@
             // 
             this.duty_Label.BackColor = System.Drawing.Color.Transparent;
             this.duty_Label.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.duty_Label.Font = new System.Drawing.Font("微软雅黑", 34F, System.Drawing.FontStyle.Bold);
+            this.duty_Label.Font = new System.Drawing.Font("微软雅黑", 38F, System.Drawing.FontStyle.Bold);
             this.duty_Label.ForeColor = System.Drawing.Color.Cyan;
             this.duty_Label.Location = new System.Drawing.Point(50, 954);
             this.duty_Label.Name = "duty_Label";
@@ -63,10 +63,10 @@
             this.panel1.Controls.Add(this.inform_richtext);
             this.panel1.Controls.Add(this.header_label);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(50, 0);
+            this.panel1.Location = new System.Drawing.Point(50, 50);
             this.panel1.Name = "panel1";
             this.panel1.Padding = new System.Windows.Forms.Padding(100, 0, 50, 0);
-            this.panel1.Size = new System.Drawing.Size(1804, 954);
+            this.panel1.Size = new System.Drawing.Size(1804, 904);
             this.panel1.TabIndex = 97;
             // 
             // inform_richtext
@@ -81,7 +81,7 @@
             this.inform_richtext.Name = "inform_richtext";
             this.inform_richtext.ReadOnly = true;
             this.inform_richtext.ScrollBars = System.Windows.Forms.RichTextBoxScrollBars.None;
-            this.inform_richtext.Size = new System.Drawing.Size(1654, 869);
+            this.inform_richtext.Size = new System.Drawing.Size(1654, 819);
             this.inform_richtext.TabIndex = 59;
             this.inform_richtext.Text = "";
             // 
@@ -110,7 +110,7 @@
             this.Controls.Add(this.duty_Label);
             this.Controls.Add(this.button1);
             this.Name = "SecondScreen";
-            this.Padding = new System.Windows.Forms.Padding(50, 0, 50, 0);
+            this.Padding = new System.Windows.Forms.Padding(50, 50, 50, 0);
             this.PageIndex = 2002;
             this.Style = Sunny.UI.UIStyle.Custom;
             this.Text = "SecondScreen";

@@ -75,7 +75,7 @@ namespace SafeBroadcast
             }
             //上下居中显示文本
             //Console.WriteLine(" groupBoxEx2.Padding={0}", groupBoxEx2.Padding);
-            spare = My_Panel.Height - TimerLabel.Height - MainLabel.Height - StartLabel.Height;
+            spare = My_Panel.Height - panel7.Height - panel10.Height - StartLabel.Height;
             My_Panel.Padding = new Padding(0, spare / 3, 0, 0);
         }
 

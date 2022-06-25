@@ -34,6 +34,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.uiGroupBox1 = new Sunny.UI.UIGroupBox();
+            this.uiSwitch1 = new Sunny.UI.UISwitch();
+            this.label13 = new System.Windows.Forms.Label();
             this.Page1_UpDown = new Sunny.UI.UIIntegerUpDown();
             this.label3 = new System.Windows.Forms.Label();
             this.Time_ColorPicker = new Sunny.UI.UIColorPicker();
@@ -111,8 +113,6 @@
             this.main_label = new System.Windows.Forms.TextBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
-            this.uiSwitch1 = new Sunny.UI.UISwitch();
-            this.label13 = new System.Windows.Forms.Label();
             this.uiGroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -197,6 +197,33 @@
             this.uiGroupBox1.Text = "设置";
             this.uiGroupBox1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.uiGroupBox1.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            // 
+            // uiSwitch1
+            // 
+            this.uiSwitch1.Active = true;
+            this.uiSwitch1.ActiveText = "开启";
+            this.uiSwitch1.Font = new System.Drawing.Font("微软雅黑", 14F, System.Drawing.FontStyle.Bold);
+            this.uiSwitch1.InActiveText = "关闭";
+            this.uiSwitch1.Location = new System.Drawing.Point(1312, 80);
+            this.uiSwitch1.MinimumSize = new System.Drawing.Size(1, 1);
+            this.uiSwitch1.Name = "uiSwitch1";
+            this.uiSwitch1.Size = new System.Drawing.Size(91, 32);
+            this.uiSwitch1.TabIndex = 123;
+            this.uiSwitch1.Text = "uiSwitch1";
+            this.toolTip1.SetToolTip(this.uiSwitch1, "不启用本页则不会显示此屏内容");
+            this.uiSwitch1.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            this.uiSwitch1.ValueChanged += new Sunny.UI.UISwitch.OnValueChanged(this.uiSwitch1_ValueChanged);
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("微软雅黑", 13.8F, System.Drawing.FontStyle.Bold);
+            this.label13.Location = new System.Drawing.Point(1208, 80);
+            this.label13.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(107, 26);
+            this.label13.TabIndex = 122;
+            this.label13.Text = "值班计划：";
             // 
             // Page1_UpDown
             // 
@@ -454,7 +481,7 @@
             this.editor_textBox.Name = "editor_textBox";
             this.editor_textBox.Size = new System.Drawing.Size(88, 25);
             this.editor_textBox.TabIndex = 167;
-            this.editor_textBox.Text = "编播值班";
+            this.editor_textBox.Text = "编委办";
             this.editor_textBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // manager_textBox
@@ -465,7 +492,7 @@
             this.manager_textBox.Name = "manager_textBox";
             this.manager_textBox.Size = new System.Drawing.Size(88, 25);
             this.manager_textBox.TabIndex = 166;
-            this.manager_textBox.Text = "网管值班";
+            this.manager_textBox.Text = "网管";
             this.manager_textBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // day7_comboBox5
@@ -1012,13 +1039,13 @@
             this.duty_label.BackColor = System.Drawing.SystemColors.ControlText;
             this.duty_label.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.duty_label.Dock = System.Windows.Forms.DockStyle.Top;
-            this.duty_label.Font = new System.Drawing.Font("微软雅黑", 34F, System.Drawing.FontStyle.Bold);
+            this.duty_label.Font = new System.Drawing.Font("微软雅黑", 38F, System.Drawing.FontStyle.Bold);
             this.duty_label.ForeColor = System.Drawing.Color.Cyan;
             this.duty_label.Location = new System.Drawing.Point(80, 327);
             this.duty_label.Name = "duty_label";
-            this.duty_label.Size = new System.Drawing.Size(1740, 60);
+            this.duty_label.Size = new System.Drawing.Size(1740, 67);
             this.duty_label.TabIndex = 49;
-            this.duty_label.Text = "值班主任：xxx  技术带班：xxx，xxx  网管值班：xxx  编播值班：xxx";
+            this.duty_label.Text = "值班主任：xxx  技术带班：xxx，xxx  网管：xxx  编委办：xxx";
             this.duty_label.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // time_label
@@ -1059,33 +1086,6 @@
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 46;
             this.pictureBox5.TabStop = false;
-            // 
-            // uiSwitch1
-            // 
-            this.uiSwitch1.Active = true;
-            this.uiSwitch1.ActiveText = "开启";
-            this.uiSwitch1.Font = new System.Drawing.Font("微软雅黑", 14F, System.Drawing.FontStyle.Bold);
-            this.uiSwitch1.InActiveText = "关闭";
-            this.uiSwitch1.Location = new System.Drawing.Point(1312, 80);
-            this.uiSwitch1.MinimumSize = new System.Drawing.Size(1, 1);
-            this.uiSwitch1.Name = "uiSwitch1";
-            this.uiSwitch1.Size = new System.Drawing.Size(91, 32);
-            this.uiSwitch1.TabIndex = 123;
-            this.uiSwitch1.Text = "uiSwitch1";
-            this.toolTip1.SetToolTip(this.uiSwitch1, "不启用本页则不会显示此屏内容");
-            this.uiSwitch1.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
-            this.uiSwitch1.ValueChanged += new Sunny.UI.UISwitch.OnValueChanged(this.uiSwitch1_ValueChanged);
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("微软雅黑", 13.8F, System.Drawing.FontStyle.Bold);
-            this.label13.Location = new System.Drawing.Point(1208, 80);
-            this.label13.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(107, 26);
-            this.label13.TabIndex = 122;
-            this.label13.Text = "值班计划：";
             // 
             // SubForm1
             // 

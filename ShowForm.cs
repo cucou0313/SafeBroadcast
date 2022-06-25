@@ -17,16 +17,8 @@ namespace SafeBroadcast
         public ShowForm()
         {
             InitializeComponent();
-            //AddPage(new FirstScreen());
-            //if (PublicArgs.is_use_second_screen)
-            //{
-            //    AddPage(new SecondScreen());
-            //}
-            //else
-            //{
-            //    Switch_ProcessBar.Visible = false;
-            //}
-            //SelectPage(2001);
+            ShowCursor(0);
+
             bool only_first = false;
             for (int i = 0; i < PublicArgs.page_stay.Length; i++)
             {
@@ -52,13 +44,9 @@ namespace SafeBroadcast
             Switch_ProcessBar.Visible = only_first;
             Switch_ProcessBar.Maximum = PublicArgs.page_stay[0];
             per_sceond_timer.Start();
-
-            ShowCursor(0);
         }
 
         int duty_update = 0;
-        //int page_stay = 0;
-        //bool is_first = true;
         int[] stays = new int[PublicArgs.page_stay.Length];
         int page_index = 0;
         private void per_sceond_timer_Tick(object sender, EventArgs e)
@@ -71,6 +59,7 @@ namespace SafeBroadcast
                 SetParamToPage(2001, 0, duty_content);
                 SetParamToPage(2002, 0, duty_content);
             }
+
             stays[page_index]++;
             //Switch_ProcessBar.Maximum = PublicArgs.page_stay[page_index];
             Switch_ProcessBar.Value = stays[page_index];
@@ -100,47 +89,16 @@ namespace SafeBroadcast
                 }
                 else
                 {
-                    PublicArgs.MyVlc.Stop();
+                    if (PublicArgs.MyVlc != null)
+                    {
+                        PublicArgs.MyVlc.Stop();
+                    }
                 }
                 SelectPage(2001 + i);
                 Switch_ProcessBar.Maximum = PublicArgs.page_stay[i];
                 Switch_ProcessBar.Value = 0;
                 page_index = i;
             }
-
-            //if (PublicArgs.is_use_second_screen)
-            //{
-            //    //第一屏、第二屏切换
-            //    if (is_first)
-            //    {
-            //        page_stay++;
-            //        Switch_ProcessBar.Value = page_stay * 100 / PublicArgs.page1_stay;
-            //        if (page_stay > PublicArgs.page1_stay)
-            //        {
-            //            SelectPage(2002);
-            //            page_stay = 0;
-            //            Switch_ProcessBar.Value = 0;
-            //            is_first = false;
-            //        }
-            //    }
-            //    else
-            //    {
-            //        page_stay++;
-            //        Switch_ProcessBar.Value = page_stay * 100 / PublicArgs.page2_stay;
-            //        if (page_stay > PublicArgs.page2_stay)
-            //        {
-            //            SelectPage(2001);
-            //            page_stay = 0;
-            //            Switch_ProcessBar.Value = 0;
-            //            is_first = true;
-            //        }
-            //    }
-            //}
-        }
-
-        private void Close_Button_Click(object sender, EventArgs e)
-        {
-            this.Close();
         }
 
         /// <summary>
@@ -153,6 +111,12 @@ namespace SafeBroadcast
 
         private void ShowForm_FormClosing(object sender, FormClosingEventArgs e)
         {
+            //在主页面进行子页视频关闭操作，直接在子页退出前关闭视频会卡死
+            //if (PublicArgs.MyVlc != null)
+            //{
+            //    PublicArgs.MyVlc.Stop();
+            //}
+            per_sceond_timer.Enabled = false;
             ShowCursor(1);
         }
     }
