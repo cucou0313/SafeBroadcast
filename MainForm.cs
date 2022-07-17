@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -53,6 +54,7 @@ namespace SafeBroadcast
             Log.log("退出程序");
         }
 
+        //public ShowForm sf;
         private void Submit_Click(object sender, EventArgs e)
         {
             //SetParamToPage
@@ -69,6 +71,42 @@ namespace SafeBroadcast
             else
             {
                 ShowErrorTip("提示框 - 设置的参数有误");
+            }
+        }
+
+        bool is_restart = false;
+        /// <summary>
+        /// 在每晚4:15重启显示页面，回收资源防止卡死
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void RestartTimer_Tick(object sender, EventArgs e)
+        {
+            DateTime now_time = DateTime.Now;
+            if (is_restart)
+            {
+                if (PublicArgs.MyVlc != null)
+                {
+                    PublicArgs.MyVlc.Stop();
+                }
+                is_restart = false;
+                //重开展示界面
+                Submit.PerformClick();
+            }
+            if (now_time.Hour == 4 && now_time.Minute == 15)
+            {
+                //遍历所有窗体
+                FormCollection childCollection = Application.OpenForms;
+                foreach (Form f in childCollection)
+                {
+                    if (f.Name == "ShowForm")
+                    {
+                        is_restart = true;
+                        f.Close();
+                        f.Dispose();
+                        break;
+                    }
+                }
             }
         }
     }

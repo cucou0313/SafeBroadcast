@@ -121,7 +121,7 @@
             // 
             this.duty_Label.BackColor = System.Drawing.Color.Transparent;
             this.duty_Label.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.duty_Label.Font = new System.Drawing.Font("微软雅黑", 38F, System.Drawing.FontStyle.Bold);
+            this.duty_Label.Font = new System.Drawing.Font("微软雅黑", 34F, System.Drawing.FontStyle.Bold);
             this.duty_Label.ForeColor = System.Drawing.Color.Cyan;
             this.duty_Label.Location = new System.Drawing.Point(50, 954);
             this.duty_Label.Name = "duty_Label";

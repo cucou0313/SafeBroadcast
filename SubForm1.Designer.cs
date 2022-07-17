@@ -481,7 +481,7 @@
             this.editor_textBox.Name = "editor_textBox";
             this.editor_textBox.Size = new System.Drawing.Size(88, 25);
             this.editor_textBox.TabIndex = 167;
-            this.editor_textBox.Text = "编委办";
+            this.editor_textBox.Text = "编播值班";
             this.editor_textBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // manager_textBox
@@ -492,7 +492,7 @@
             this.manager_textBox.Name = "manager_textBox";
             this.manager_textBox.Size = new System.Drawing.Size(88, 25);
             this.manager_textBox.TabIndex = 166;
-            this.manager_textBox.Text = "网管";
+            this.manager_textBox.Text = "网管值班";
             this.manager_textBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // day7_comboBox5
@@ -1039,13 +1039,13 @@
             this.duty_label.BackColor = System.Drawing.SystemColors.ControlText;
             this.duty_label.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.duty_label.Dock = System.Windows.Forms.DockStyle.Top;
-            this.duty_label.Font = new System.Drawing.Font("微软雅黑", 38F, System.Drawing.FontStyle.Bold);
+            this.duty_label.Font = new System.Drawing.Font("微软雅黑", 34F, System.Drawing.FontStyle.Bold);
             this.duty_label.ForeColor = System.Drawing.Color.Cyan;
-            this.duty_label.Location = new System.Drawing.Point(80, 327);
+            this.duty_label.Location = new System.Drawing.Point(80, 354);
             this.duty_label.Name = "duty_label";
-            this.duty_label.Size = new System.Drawing.Size(1740, 67);
+            this.duty_label.Size = new System.Drawing.Size(1740, 60);
             this.duty_label.TabIndex = 49;
-            this.duty_label.Text = "值班主任：xxx  技术带班：xxx，xxx  网管：xxx  编委办：xxx";
+            this.duty_label.Text = "值班主任:xxx  技术带班:xxx，xxx  网管值班:xxx  编播值班:xxx";
             this.duty_label.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // time_label
@@ -1053,11 +1053,11 @@
             this.time_label.BackColor = System.Drawing.SystemColors.ControlText;
             this.time_label.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.time_label.Dock = System.Windows.Forms.DockStyle.Top;
-            this.time_label.Font = new System.Drawing.Font("Times New Roman", 100F, System.Drawing.FontStyle.Bold);
+            this.time_label.Font = new System.Drawing.Font("微软雅黑", 100F, System.Drawing.FontStyle.Bold);
             this.time_label.ForeColor = System.Drawing.Color.Lime;
-            this.time_label.Location = new System.Drawing.Point(80, 173);
+            this.time_label.Location = new System.Drawing.Point(80, 178);
             this.time_label.Name = "time_label";
-            this.time_label.Size = new System.Drawing.Size(1740, 154);
+            this.time_label.Size = new System.Drawing.Size(1740, 176);
             this.time_label.TabIndex = 48;
             this.time_label.Text = "30天";
             this.time_label.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1067,11 +1067,11 @@
             this.main_label.BackColor = System.Drawing.SystemColors.ControlText;
             this.main_label.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.main_label.Dock = System.Windows.Forms.DockStyle.Top;
-            this.main_label.Font = new System.Drawing.Font("微软雅黑", 80F, System.Drawing.FontStyle.Bold);
+            this.main_label.Font = new System.Drawing.Font("点字倔强黑", 84F, System.Drawing.FontStyle.Bold);
             this.main_label.ForeColor = System.Drawing.Color.Crimson;
             this.main_label.Location = new System.Drawing.Point(80, 32);
             this.main_label.Name = "main_label";
-            this.main_label.Size = new System.Drawing.Size(1740, 141);
+            this.main_label.Size = new System.Drawing.Size(1740, 146);
             this.main_label.TabIndex = 47;
             this.main_label.Text = "安全播出无事故累计";
             this.main_label.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;

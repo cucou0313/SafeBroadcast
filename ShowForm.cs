@@ -116,6 +116,7 @@ namespace SafeBroadcast
             //{
             //    PublicArgs.MyVlc.Stop();
             //}
+            Console.WriteLine("ShowForm Close");
             per_sceond_timer.Enabled = false;
             ShowCursor(1);
         }

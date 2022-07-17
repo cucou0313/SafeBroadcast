@@ -37,7 +37,7 @@ namespace SafeBroadcast
         {
             OpenFileDialog dialog = new OpenFileDialog();
             dialog.Title = "请选择视频文件";
-            dialog.Filter = "MP4(*.mp4)|*.mp4|AVI(*.avi)|*.avi|FLV(*.flv)|*.flv";
+            dialog.Filter = "MP4(*.mp4)|*.mp4|AVI(*.avi)|*.avi|所有文件(*.*)|*.*";
             if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
                 video_path = dialog.FileName;

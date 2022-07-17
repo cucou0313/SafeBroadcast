@@ -28,9 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("安播设置");
-            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("重保发布");
-            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("视频展示");
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("安播设置");
+            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("重保发布");
+            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("视频展示");
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
@@ -38,6 +39,7 @@
             this.Submit = new Sunny.UI.UISymbolButton();
             this.uiTabControl1 = new Sunny.UI.UITabControl();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.RestartTimer = new System.Windows.Forms.Timer(this.components);
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -47,9 +49,9 @@
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 584);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 581);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1165, 22);
+            this.statusStrip1.Size = new System.Drawing.Size(1165, 25);
             this.statusStrip1.TabIndex = 46;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -58,7 +60,7 @@
             this.toolStripStatusLabel1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.toolStripStatusLabel1.ForeColor = System.Drawing.Color.DimGray;
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(260, 17);
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(320, 19);
             this.toolStripStatusLabel1.Text = "Copyright© by 陕西广电融媒体集团 · 播出部";
             // 
             // Header
@@ -72,18 +74,18 @@
             this.Header.Name = "Header";
             this.Header.NodeAlignment = System.Drawing.StringAlignment.Near;
             this.Header.NodeInterval = 200;
-            treeNode1.Name = "page1_btn";
-            treeNode1.Text = "安播设置";
-            treeNode1.ToolTipText = "安播设置子页";
-            treeNode2.Name = "page2_btn";
-            treeNode2.Text = "重保发布";
-            treeNode2.ToolTipText = "重保发布子页";
-            treeNode3.Name = "page3_btn";
-            treeNode3.Text = "视频展示";
+            treeNode7.Name = "page1_btn";
+            treeNode7.Text = "安播设置";
+            treeNode7.ToolTipText = "安播设置子页";
+            treeNode8.Name = "page2_btn";
+            treeNode8.Text = "重保发布";
+            treeNode8.ToolTipText = "重保发布子页";
+            treeNode9.Name = "page3_btn";
+            treeNode9.Text = "视频展示";
             this.Header.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode1,
-            treeNode2,
-            treeNode3});
+            treeNode7,
+            treeNode8,
+            treeNode9});
             this.Header.NodeSize = new System.Drawing.Size(200, 45);
             this.Header.Size = new System.Drawing.Size(1165, 80);
             this.Header.TabIndex = 48;
@@ -135,7 +137,7 @@
             this.uiTabControl1.Name = "uiTabControl1";
             this.uiTabControl1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.uiTabControl1.SelectedIndex = 0;
-            this.uiTabControl1.Size = new System.Drawing.Size(1165, 469);
+            this.uiTabControl1.Size = new System.Drawing.Size(1165, 466);
             this.uiTabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.uiTabControl1.TabBackColor = System.Drawing.Color.White;
             this.uiTabControl1.TabIndex = 115;
@@ -153,6 +155,12 @@
             this.pictureBox1.Size = new System.Drawing.Size(185, 86);
             this.pictureBox1.TabIndex = 50;
             this.pictureBox1.TabStop = false;
+            // 
+            // RestartTimer
+            // 
+            this.RestartTimer.Enabled = true;
+            this.RestartTimer.Interval = 60000;
+            this.RestartTimer.Tick += new System.EventHandler(this.RestartTimer_Tick);
             // 
             // MainForm
             // 
@@ -191,5 +199,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private Sunny.UI.UISymbolButton Submit;
         private Sunny.UI.UITabControl uiTabControl1;
+        private System.Windows.Forms.Timer RestartTimer;
     }
 }

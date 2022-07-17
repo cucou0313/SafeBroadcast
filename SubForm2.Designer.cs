@@ -59,6 +59,7 @@
             this.duty_label = new System.Windows.Forms.TextBox();
             this.header_label = new System.Windows.Forms.TextBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.fontDialog1 = new System.Windows.Forms.FontDialog();
             this.uiGroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -201,6 +202,7 @@
             this.Encode_ComboBox.TextAlignment = System.Drawing.ContentAlignment.MiddleLeft;
             this.toolTip1.SetToolTip(this.Encode_ComboBox, "出现乱码时可以尝试更换编码格式");
             this.Encode_ComboBox.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            this.Encode_ComboBox.SelectedIndexChanged += new System.EventHandler(this.Encode_ComboBox_SelectedIndexChanged);
             // 
             // uiLine2
             // 
@@ -348,6 +350,7 @@
             this.main_font_btn.Size = new System.Drawing.Size(63, 29);
             this.main_font_btn.TabIndex = 59;
             this.main_font_btn.UseVisualStyleBackColor = true;
+            this.main_font_btn.Click += new System.EventHandler(this.main_font_btn_Click);
             // 
             // Align_ComboBox
             // 
@@ -432,6 +435,7 @@
             this.header_font_btn.Size = new System.Drawing.Size(63, 29);
             this.header_font_btn.TabIndex = 49;
             this.header_font_btn.UseVisualStyleBackColor = true;
+            this.header_font_btn.Click += new System.EventHandler(this.header_font_btn_Click);
             // 
             // label10
             // 
@@ -492,10 +496,10 @@
             this.inform_richtext.Dock = System.Windows.Forms.DockStyle.Fill;
             this.inform_richtext.Font = new System.Drawing.Font("微软雅黑", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.inform_richtext.ForeColor = System.Drawing.Color.Crimson;
-            this.inform_richtext.Location = new System.Drawing.Point(0, 85);
+            this.inform_richtext.Location = new System.Drawing.Point(0, 84);
             this.inform_richtext.Margin = new System.Windows.Forms.Padding(4);
             this.inform_richtext.Name = "inform_richtext";
-            this.inform_richtext.Size = new System.Drawing.Size(1092, 339);
+            this.inform_richtext.Size = new System.Drawing.Size(1092, 347);
             this.inform_richtext.TabIndex = 55;
             this.inform_richtext.Text = "";
             // 
@@ -504,13 +508,13 @@
             this.duty_label.BackColor = System.Drawing.SystemColors.ControlText;
             this.duty_label.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.duty_label.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.duty_label.Font = new System.Drawing.Font("微软雅黑", 38F, System.Drawing.FontStyle.Bold);
+            this.duty_label.Font = new System.Drawing.Font("微软雅黑", 34F, System.Drawing.FontStyle.Bold);
             this.duty_label.ForeColor = System.Drawing.Color.Cyan;
-            this.duty_label.Location = new System.Drawing.Point(0, 424);
+            this.duty_label.Location = new System.Drawing.Point(0, 431);
             this.duty_label.Name = "duty_label";
-            this.duty_label.Size = new System.Drawing.Size(1092, 67);
+            this.duty_label.Size = new System.Drawing.Size(1092, 60);
             this.duty_label.TabIndex = 54;
-            this.duty_label.Text = "值班主任：xxx  技术带班：xxx，xxx  网管：xxx  编委办：xxx";
+            this.duty_label.Text = "值班主任:xxx  技术带班:xxx，xxx  网管值班:xxx  编播值班:xxx";
             this.duty_label.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // header_label
@@ -518,11 +522,11 @@
             this.header_label.BackColor = System.Drawing.SystemColors.ControlText;
             this.header_label.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.header_label.Dock = System.Windows.Forms.DockStyle.Top;
-            this.header_label.Font = new System.Drawing.Font("微软雅黑", 48F, System.Drawing.FontStyle.Bold);
+            this.header_label.Font = new System.Drawing.Font("点字倔强黑", 48F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.header_label.ForeColor = System.Drawing.Color.Crimson;
             this.header_label.Location = new System.Drawing.Point(0, 0);
             this.header_label.Name = "header_label";
-            this.header_label.Size = new System.Drawing.Size(1092, 85);
+            this.header_label.Size = new System.Drawing.Size(1092, 84);
             this.header_label.TabIndex = 53;
             this.header_label.Text = "重要保障期通知";
             this.header_label.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -592,5 +596,6 @@
         private System.Windows.Forms.RichTextBox inform_richtext;
         private System.Windows.Forms.TextBox duty_label;
         private System.Windows.Forms.TextBox header_label;
+        private System.Windows.Forms.FontDialog fontDialog1;
     }
 }

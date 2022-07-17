@@ -30,10 +30,10 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.Switch_ProcessBar = new Sunny.UI.UIProcessBar();
             this.dleft_panel = new System.Windows.Forms.Panel();
             this.per_sceond_timer = new System.Windows.Forms.Timer(this.components);
             this.uiTabControl1 = new Sunny.UI.UITabControl();
-            this.Switch_ProcessBar = new Sunny.UI.UIProcessBar();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -42,17 +42,34 @@
             this.panel1.Controls.Add(this.Switch_ProcessBar);
             this.panel1.Controls.Add(this.dleft_panel);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 1030);
+            this.panel1.Location = new System.Drawing.Point(0, 1026);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1920, 10);
+            this.panel1.Size = new System.Drawing.Size(1920, 4);
             this.panel1.TabIndex = 5;
+            // 
+            // Switch_ProcessBar
+            // 
+            this.Switch_ProcessBar.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.Switch_ProcessBar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
+            this.Switch_ProcessBar.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.Switch_ProcessBar.Location = new System.Drawing.Point(0, 0);
+            this.Switch_ProcessBar.MinimumSize = new System.Drawing.Size(70, 1);
+            this.Switch_ProcessBar.Name = "Switch_ProcessBar";
+            this.Switch_ProcessBar.Radius = 0;
+            this.Switch_ProcessBar.RectSides = System.Windows.Forms.ToolStripStatusLabelBorderSides.None;
+            this.Switch_ProcessBar.ShowPercent = false;
+            this.Switch_ProcessBar.ShowValue = false;
+            this.Switch_ProcessBar.Size = new System.Drawing.Size(1920, 4);
+            this.Switch_ProcessBar.Style = Sunny.UI.UIStyle.Custom;
+            this.Switch_ProcessBar.TabIndex = 95;
+            this.Switch_ProcessBar.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
             // dleft_panel
             // 
             this.dleft_panel.Dock = System.Windows.Forms.DockStyle.Left;
             this.dleft_panel.Location = new System.Drawing.Point(0, 0);
             this.dleft_panel.Name = "dleft_panel";
-            this.dleft_panel.Size = new System.Drawing.Size(0, 10);
+            this.dleft_panel.Size = new System.Drawing.Size(0, 4);
             this.dleft_panel.TabIndex = 0;
             // 
             // per_sceond_timer
@@ -70,7 +87,7 @@
             this.uiTabControl1.MainPage = "";
             this.uiTabControl1.Name = "uiTabControl1";
             this.uiTabControl1.SelectedIndex = 0;
-            this.uiTabControl1.Size = new System.Drawing.Size(1920, 1030);
+            this.uiTabControl1.Size = new System.Drawing.Size(1920, 1026);
             this.uiTabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.uiTabControl1.Style = Sunny.UI.UIStyle.Custom;
             this.uiTabControl1.TabIndex = 8;
@@ -78,30 +95,13 @@
             this.uiTabControl1.TipsFont = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.uiTabControl1.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
-            // Switch_ProcessBar
-            // 
-            this.Switch_ProcessBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Switch_ProcessBar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(243)))), ((int)(((byte)(255)))));
-            this.Switch_ProcessBar.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.Switch_ProcessBar.Location = new System.Drawing.Point(0, 0);
-            this.Switch_ProcessBar.MinimumSize = new System.Drawing.Size(70, 1);
-            this.Switch_ProcessBar.Name = "Switch_ProcessBar";
-            this.Switch_ProcessBar.Radius = 0;
-            this.Switch_ProcessBar.RectSides = System.Windows.Forms.ToolStripStatusLabelBorderSides.None;
-            this.Switch_ProcessBar.ShowPercent = false;
-            this.Switch_ProcessBar.ShowValue = false;
-            this.Switch_ProcessBar.Size = new System.Drawing.Size(1920, 4);
-            this.Switch_ProcessBar.Style = Sunny.UI.UIStyle.Custom;
-            this.Switch_ProcessBar.TabIndex = 95;
-            this.Switch_ProcessBar.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
-            // 
             // ShowForm
             // 
             this.AllowShowTitle = false;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.SystemColors.ControlText;
-            this.ClientSize = new System.Drawing.Size(1920, 1040);
-            this.CloseAskString = "是否退出？";
+            this.ClientSize = new System.Drawing.Size(1920, 1030);
+            this.CloseAskString = "";
             this.Controls.Add(this.uiTabControl1);
             this.Controls.Add(this.panel1);
             this.EscClose = true;

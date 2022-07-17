@@ -21,6 +21,7 @@ namespace SafeBroadcast
             Encode_ComboBox.SelectedIndex = 1;
         }
 
+        string file = "";
         private void Txt_Button_Click(object sender, EventArgs e)
         {
             OpenFileDialog dialog = new OpenFileDialog();
@@ -31,7 +32,7 @@ namespace SafeBroadcast
                 header_label.Visible = true;
                 Rtf_Button.ShowTips = false;
                 PublicArgs.rtf_filepath = "";
-                string file = dialog.FileName;
+                file = dialog.FileName;
                 //richTextBox1.Text = File.ReadAllText(file);
                 /*UTF8
                 Default
@@ -204,6 +205,56 @@ namespace SafeBroadcast
             else
             {
                 return false;
+            }
+        }
+
+        private void header_font_btn_Click(object sender, EventArgs e)
+        {
+            DialogResult dr = fontDialog1.ShowDialog();
+            if (dr == DialogResult.OK)
+            {
+                header_label.Font = fontDialog1.Font;
+            }
+        }
+
+        private void main_font_btn_Click(object sender, EventArgs e)
+        {
+            DialogResult dr = fontDialog1.ShowDialog();
+            if (dr == DialogResult.OK)
+            {
+                inform_richtext.Font = fontDialog1.Font;
+            }
+        }
+
+        private void Encode_ComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (file != "")
+            {
+                header_label.Visible = true;
+                PublicArgs.rtf_filepath = "";
+                FileStream fs = new FileStream(file, FileMode.Open, FileAccess.Read);
+                StreamReader sr = null;
+                switch (Encode_ComboBox.SelectedIndex)
+                {
+                    case 0:
+                        sr = new StreamReader(fs, Encoding.UTF8);
+                        break;
+                    case 1:
+                        sr = new StreamReader(fs, Encoding.Default);
+                        break;
+                    case 2:
+                        sr = new StreamReader(fs, Encoding.GetEncoding("GB2312"));
+                        break;
+                    case 3:
+                        sr = new StreamReader(fs, Encoding.Unicode);
+                        break;
+                    case 4:
+                        sr = new StreamReader(fs, Encoding.ASCII);
+                        break;
+                }
+                inform_richtext.Text = sr.ReadToEnd();
+                Txt_Button.ShowTips = true;
+                PublicArgs.content_text = inform_richtext.Text;
             }
         }
     }

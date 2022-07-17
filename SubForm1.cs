@@ -164,7 +164,7 @@ namespace SafeBroadcast
                                 switch (j)
                                 {
                                     case 1:
-                                        context = string.Format("{0}：{1}     ", director_textBox.Text, cb[0].Text);
+                                        context = string.Format("{0}：{1}    ", director_textBox.Text, cb[0].Text);
                                         break;
                                     case 2:
                                         context = string.Format("{0}：{1}, ", tech_textBox.Text, cb[0].Text);
@@ -173,10 +173,10 @@ namespace SafeBroadcast
                                         context = cb[0].Text;
                                         break;
                                     case 4:
-                                        context = string.Format("     {0}：{1}", manager_textBox.Text, cb[0].Text);
+                                        context = string.Format("    {0}：{1}", manager_textBox.Text, cb[0].Text);
                                         break;
                                     case 5:
-                                        context = string.Format("     {0}：{1}", editor_textBox.Text, cb[0].Text);
+                                        context = string.Format("   {0}：{1}", editor_textBox.Text, cb[0].Text);
                                         break;
                                 }
                                 day_duty += context;
