@@ -113,6 +113,8 @@
             this.main_label = new System.Windows.Forms.TextBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
+            this.label24 = new System.Windows.Forms.Label();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.uiGroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -167,6 +169,8 @@
             // 
             // uiGroupBox1
             // 
+            this.uiGroupBox1.Controls.Add(this.dateTimePicker2);
+            this.uiGroupBox1.Controls.Add(this.label24);
             this.uiGroupBox1.Controls.Add(this.uiSwitch1);
             this.uiGroupBox1.Controls.Add(this.label13);
             this.uiGroupBox1.Controls.Add(this.Page1_UpDown);
@@ -1087,6 +1091,31 @@
             this.pictureBox5.TabIndex = 46;
             this.pictureBox5.TabStop = false;
             // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("微软雅黑", 13.8F, System.Drawing.FontStyle.Bold);
+            this.label24.Location = new System.Drawing.Point(1208, 40);
+            this.label24.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(107, 26);
+            this.label24.TabIndex = 168;
+            this.label24.Text = "重启设置：";
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.CalendarFont = new System.Drawing.Font("微软雅黑", 12F);
+            this.dateTimePicker2.CustomFormat = "HH:mm";
+            this.dateTimePicker2.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker2.Location = new System.Drawing.Point(1312, 37);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(91, 29);
+            this.dateTimePicker2.TabIndex = 169;
+            this.toolTip1.SetToolTip(this.dateTimePicker2, "每日软件自重启时间");
+            this.dateTimePicker2.Value = new System.DateTime(2022, 7, 18, 4, 15, 0, 0);
+            this.dateTimePicker2.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged);
+            // 
             // SubForm1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -1198,5 +1227,7 @@
         private System.Windows.Forms.FontDialog fontDialog1;
         private Sunny.UI.UISwitch uiSwitch1;
         private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.Label label24;
     }
 }

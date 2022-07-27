@@ -133,65 +133,80 @@ namespace SafeBroadcast
         {
             if (objects.Length == 1)
             {
-                if (Page1_UpDown.Value <= 0)
+                string parm_recv = objects[0].ToString();
+                if (parm_recv == "第1屏参数")
+                {
+                    if (Page1_UpDown.Value <= 0)
+                    {
+                        return false;
+                    }
+                    PublicArgs.page_stay[0] = Page1_UpDown.Value;
+
+                    PublicArgs.main_text = Main_TextBox.Text;
+                    PublicArgs.main_color = main_label.ForeColor;
+                    PublicArgs.main_font = main_label.Font;
+                    PublicArgs.time_type = Time_ComboBox.SelectedIndex;
+                    PublicArgs.start_time = dateTimePicker1.Value;
+                    PublicArgs.time_color = time_label.ForeColor;
+                    PublicArgs.time_font = time_label.Font;
+                    PublicArgs.is_use_duty = uiSwitch1.Active;
+
+                    PublicArgs.restart_hour = dateTimePicker2.Value.Hour;
+                    PublicArgs.restart_min = dateTimePicker2.Value.Minute;
+
+                    if (uiSwitch1.Active)
+                    {
+                        //保存值班表
+                        for (int i = 1; i < 8; i++)
+                        {
+                            string day_duty = "";
+                            for (int j = 1; j < 6; j++)
+                            {
+                                string ctrl_name = string.Format("day{0}_comboBox{1}", i, j);
+                                Control[] cb = uiGroupBox2.Controls.Find(ctrl_name, true);
+                                if (cb.Length > 0)
+                                {
+                                    string context = "";
+                                    switch (j)
+                                    {
+                                        case 1:
+                                            context = string.Format("{0}：{1}    ", director_textBox.Text, cb[0].Text);
+                                            break;
+                                        case 2:
+                                            context = string.Format("{0}：{1}, ", tech_textBox.Text, cb[0].Text);
+                                            break;
+                                        case 3:
+                                            context = cb[0].Text;
+                                            break;
+                                        case 4:
+                                            context = string.Format("    {0}：{1}", manager_textBox.Text, cb[0].Text);
+                                            break;
+                                        case 5:
+                                            context = string.Format("   {0}：{1}", editor_textBox.Text, cb[0].Text);
+                                            break;
+                                    }
+                                    day_duty += context;
+                                }
+                            }
+                            PublicArgs.dutys[i - 1] = day_duty;
+                        }
+                        PublicArgs.duty_text = PublicArgs.day_in_week();
+                        PublicArgs.duty_color = duty_label.ForeColor;
+                        PublicArgs.duty_font = duty_label.Font;
+                    }
+
+                    Log.log(string.Format("开始时间 = {0},主文本 = {1},计时精度 = {2}", PublicArgs.start_time, PublicArgs.main_text, Time_ComboBox.SelectedItem));
+
+                    return true;
+                }
+                else if (parm_recv == "自动参数")
+                {
+                    return true;
+                }
+                else
                 {
                     return false;
                 }
-                PublicArgs.page_stay[0] = Page1_UpDown.Value;
-
-                PublicArgs.main_text = Main_TextBox.Text;
-                PublicArgs.main_color = main_label.ForeColor;
-                PublicArgs.main_font = main_label.Font;
-                PublicArgs.time_type = Time_ComboBox.SelectedIndex;
-                PublicArgs.start_time = dateTimePicker1.Value;
-                PublicArgs.time_color = time_label.ForeColor;
-                PublicArgs.time_font = time_label.Font;
-                PublicArgs.is_use_duty = uiSwitch1.Active;
-
-                if (uiSwitch1.Active)
-                {
-                    //保存值班表
-                    for (int i = 1; i < 8; i++)
-                    {
-                        string day_duty = "";
-                        for (int j = 1; j < 6; j++)
-                        {
-                            string ctrl_name = string.Format("day{0}_comboBox{1}", i, j);
-                            Control[] cb = uiGroupBox2.Controls.Find(ctrl_name, true);
-                            if (cb.Length > 0)
-                            {
-                                string context = "";
-                                switch (j)
-                                {
-                                    case 1:
-                                        context = string.Format("{0}：{1}    ", director_textBox.Text, cb[0].Text);
-                                        break;
-                                    case 2:
-                                        context = string.Format("{0}：{1}, ", tech_textBox.Text, cb[0].Text);
-                                        break;
-                                    case 3:
-                                        context = cb[0].Text;
-                                        break;
-                                    case 4:
-                                        context = string.Format("    {0}：{1}", manager_textBox.Text, cb[0].Text);
-                                        break;
-                                    case 5:
-                                        context = string.Format("   {0}：{1}", editor_textBox.Text, cb[0].Text);
-                                        break;
-                                }
-                                day_duty += context;
-                            }
-                        }
-                        PublicArgs.dutys[i - 1] = day_duty;
-                    }
-                    PublicArgs.duty_text = PublicArgs.day_in_week();
-                    PublicArgs.duty_color = duty_label.ForeColor;
-                    PublicArgs.duty_font = duty_label.Font;
-                }
-
-                Log.log(string.Format("开始时间 = {0},主文本 = {1},计时精度 = {2}", PublicArgs.start_time, PublicArgs.main_text, Time_ComboBox.SelectedItem));
-
-                return true;
             }
             else
             {
@@ -218,6 +233,12 @@ namespace SafeBroadcast
             PublicArgs.is_use_duty = uiSwitch1.Active;
             //传值给Sub2页面
             Frame.SetParamToPage(1002, PageIndex, uiSwitch1.Active);
+        }
+
+        private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
+        {
+            PublicArgs.restart_hour = dateTimePicker2.Value.Hour;
+            PublicArgs.restart_min = dateTimePicker2.Value.Minute;
         }
     }
 }

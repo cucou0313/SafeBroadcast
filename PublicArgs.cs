@@ -32,6 +32,9 @@ namespace SafeBroadcast
         public static VlcPlayer.VlcPlayerBase MyVlc = null;
         //各子页的停留时间
         public static int[] page_stay = new int[3];
+        //自重启时间
+        public static int restart_hour = 4;
+        public static int restart_min = 15;
 
 
         /// <summary>

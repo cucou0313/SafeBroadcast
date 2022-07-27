@@ -47,6 +47,8 @@ namespace SafeBroadcast
             AddPage(new SubForm2());
             AddPage(new SubForm3());
             SelectPage(1001);
+
+
         }
 
         private void MainForm_FormClosing(object sender, FormClosingEventArgs e)
@@ -93,7 +95,7 @@ namespace SafeBroadcast
                 //重开展示界面
                 Submit.PerformClick();
             }
-            if (now_time.Hour == 4 && now_time.Minute == 15)
+            if (now_time.Hour == PublicArgs.restart_hour && now_time.Minute == PublicArgs.restart_min)
             {
                 //遍历所有窗体
                 FormCollection childCollection = Application.OpenForms;
