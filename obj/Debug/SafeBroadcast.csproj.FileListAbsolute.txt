@@ -22,3 +22,4 @@ D:\Microsoft Visual Studio\mycodes\SafeBroadcast\obj\Debug\SafeBroadcast.csproj.
 D:\Microsoft Visual Studio\mycodes\SafeBroadcast\obj\Debug\SafeBroadcast.csproj.CopyComplete
 D:\Microsoft Visual Studio\mycodes\SafeBroadcast\obj\Debug\SafeBroadcast.exe
 D:\Microsoft Visual Studio\mycodes\SafeBroadcast\obj\Debug\SafeBroadcast.pdb
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\obj\Debug\SafeBroadcast.AutoLoad.resources

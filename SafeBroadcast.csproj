@@ -66,6 +66,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AutoLoad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AutoLoad.Designer.cs">
+      <DependentUpon>AutoLoad.cs</DependentUpon>
+    </Compile>
     <Compile Include="FirstScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +125,9 @@
       <DependentUpon>ThirdScreen.cs</DependentUpon>
     </Compile>
     <Compile Include="VlcPlayerBase.cs" />
+    <EmbeddedResource Include="AutoLoad.resx">
+      <DependentUpon>AutoLoad.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FirstScreen.resx">
       <DependentUpon>FirstScreen.cs</DependentUpon>
     </EmbeddedResource>

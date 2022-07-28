@@ -51,6 +51,13 @@ namespace SafeBroadcast
         int page_index = 0;
         private void per_sceond_timer_Tick(object sender, EventArgs e)
         {
+            DateTime now_time = DateTime.Now;
+            //到达规定时间后，展示页面直接退出程序
+            if (now_time.Hour == PublicArgs.restart_hour && now_time.Minute == PublicArgs.restart_min)
+            {
+                System.Environment.Exit(0);
+            }
+
             if (duty_update++ > 10)
             {
                 string duty_content = PublicArgs.day_in_week();

@@ -35,7 +35,10 @@ namespace SafeBroadcast
         //自重启时间
         public static int restart_hour = 4;
         public static int restart_min = 15;
-
+        //是否加载上次参数
+        public static bool is_auto_load = false;
+        //是否自动进入展示（用于夜间自启）
+        public static bool is_auto_show = false;
 
         /// <summary>
         /// 计算当天为星期几

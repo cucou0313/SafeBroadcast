@@ -127,26 +127,64 @@ namespace SafeBroadcast
             PublicArgs.volume = VolumeBar.Value;
         }
 
+        string sub3_ini = Path.Combine(Environment.CurrentDirectory, "sub3.ini");
+
         public override bool SetParam(int fromPageIndex, params object[] objects)
         {
             if (objects.Length == 1)
             {
-                if (Page3_UpDown.Value <= 0)
+                string parm_recv = objects[0].ToString();
+                if (parm_recv == "第3屏参数")
+                {
+                    if (Page3_UpDown.Value <= 0)
+                        return false;
+                    //进入展示前关闭预览
+                    if (PreVlc != null)
+                        PreVlc.Stop();
+                    PlayButton.Symbol = 61515;
+                    PlayTrackBar.Value = 0;
+                    PublicArgs.volume = VolumeBar.Value;
+                    PublicArgs.page_stay[2] = uiSwitch1.Active ? Page3_UpDown.Value : 0;
+
+                    //写入当前配置
+                    IniFile ini = new IniFile(sub3_ini);
+                    //IniFile类支持的数据类型
+                    //bool，byte，byte[]，char，Color，Datetime，decimal，double，float，int，
+                    //long，Point，PointF，sbyte，short，Size，SizeF，uint，ulong，ushort，Struct*
+                    ini.Write("Setup", "IsThirdScreen", uiSwitch1.Active);
+                    ini.Write("Setup", "PageStay", Page3_UpDown.Value);
+                    ini.Write("Setup", "Volume", VolumeBar.Value);
+                    ini.Write("Setup", "Video", video_path);
+                    ini.UpdateFile();
+
+                    return true;
+                }
+                //加载上次参数
+                else if (parm_recv == "自动加载")
+                {
+                    //读取当前配置
+                    IniFile ini = new IniFile(sub3_ini);
+                    uiSwitch1.Active = ini.ReadBool("Setup", "IsThirdScreen", false);
+                    Page3_UpDown.Value = ini.ReadInt("Setup", "PageStay", 10);
+                    VolumeBar.Value = ini.ReadInt("Setup", "Volume", 10);
+                    PublicArgs.vedio_filepath = ini.ReadString("Setup", "Video", "");
+                    if (PublicArgs.vedio_filepath != "" && !File.Exists(PublicArgs.vedio_filepath))
+                    {
+                        ShowErrorNotifier("无法加载此视频文件！");
+                        uiSwitch1.Active = false;
+                        return false;
+                    }
+                    return true;
+                }
+                else
+                {
                     return false;
-                //进入展示前关闭预览
-                if (PreVlc != null)
-                    PreVlc.Stop();
-                PlayButton.Symbol = 61515;
-                PlayTrackBar.Value = 0;
-                PublicArgs.volume = VolumeBar.Value;
-                PublicArgs.page_stay[2] = uiSwitch1.Active ? Page3_UpDown.Value : 0;
-                return true;
+                }
             }
             else
             {
                 return false;
             }
         }
-
     }
 }

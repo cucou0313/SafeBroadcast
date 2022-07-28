@@ -123,6 +123,7 @@ namespace SafeBroadcast
             duty_label.ForeColor = Duty_ColorPicker.Value;
         }
 
+        string sub1_ini = Path.Combine(Environment.CurrentDirectory, "sub1.ini");
         /// <summary>
         /// 继承的SetParam，可以响应其他页面发送过来的参数
         /// </summary>
@@ -150,7 +151,8 @@ namespace SafeBroadcast
                     PublicArgs.time_color = time_label.ForeColor;
                     PublicArgs.time_font = time_label.Font;
                     PublicArgs.is_use_duty = uiSwitch1.Active;
-
+                    //因为计划任务cmd方式只支持Hour:Minute，所以程序的自动退出时间需要和计划任务的启动时间区分开
+                    //将dateTimePicker2.Value设置为程序关闭时间，+1分钟为计划任务自启时间
                     PublicArgs.restart_hour = dateTimePicker2.Value.Hour;
                     PublicArgs.restart_min = dateTimePicker2.Value.Minute;
 
@@ -197,10 +199,91 @@ namespace SafeBroadcast
 
                     Log.log(string.Format("开始时间 = {0},主文本 = {1},计时精度 = {2}", PublicArgs.start_time, PublicArgs.main_text, Time_ComboBox.SelectedItem));
 
+                    //写入当前配置
+                    IniFile ini = new IniFile(sub1_ini);
+                    //IniFile类支持的数据类型
+                    //bool，byte，byte[]，char，Color，Datetime，decimal，double，float，int，
+                    //long，Point，PointF，sbyte，short，Size，SizeF，uint，ulong，ushort，Struct*
+                    ini.Write("Setup", "PageStay", Page1_UpDown.Value);
+                    ini.Write("Setup", "MainText", Main_TextBox.Text);
+                    ini.Write("Setup", "MainColor", main_label.ForeColor);
+                    ini.Write("Setup", "TimeType", Time_ComboBox.SelectedIndex);
+                    ini.Write("Setup", "TimeColor", time_label.ForeColor);
+                    ini.Write("Setup", "StartTime", dateTimePicker1.Value);
+                    ini.Write("Setup", "IsUseDuty", uiSwitch1.Active);
+                    ini.Write("Setup", "RestartTime", dateTimePicker2.Value);
+                    //for (int i = 0; i < PublicArgs.dutys.Length; i++)
+                    //{
+                    //    ini.Write("Setup", "DutyDay" + i, PublicArgs.dutys[i]);
+                    //}
+                    for (int i = 1; i < 6; i++)
+                    {
+                        for (int j = 1; j < 8; j++)
+                        {
+                            int row = i;
+                            if (i == 2 || i == 3)
+                            {
+                                row = 2;
+                            }
+                            else if (i > 3)
+                            {
+                                row = i - 1;
+                            }
+
+                            string ctrl_name = string.Format("day{0}_comboBox{1}", j, i);
+                            Control[] cb = uiGroupBox2.Controls.Find(ctrl_name, true);
+                            if (cb.Length > 0)
+                            {
+                                ComboBox tt = cb[0] as ComboBox;
+                                ini.Write("Setup", ctrl_name, tt.Text);
+                            }
+                        }
+                    }
+                    ini.Write("Setup", "DutyColor", duty_label.ForeColor);
+                    ini.UpdateFile();
+
                     return true;
                 }
-                else if (parm_recv == "自动参数")
+                //加载上次参数
+                else if (parm_recv == "自动加载")
                 {
+                    //读取当前配置
+                    IniFile ini = new IniFile(sub1_ini);
+                    Page1_UpDown.Value = ini.ReadInt("Setup", "PageStay", 60);
+                    Main_TextBox.Text = ini.ReadString("Setup", "MainText", "安全播出无事故累计");
+                    main_label.ForeColor = ini.ReadColor("Setup", "MainColor", main_label.ForeColor);
+                    Main_ColorPicker.Value = main_label.ForeColor;
+                    Time_ComboBox.SelectedIndex = ini.ReadInt("Setup", "TimeType", 3);
+                    time_label.ForeColor = ini.ReadColor("Setup", "TimeColor", time_label.ForeColor);
+                    Time_ColorPicker.Value = time_label.ForeColor;
+                    dateTimePicker1.Value = ini.ReadDateTime("Setup", "StartTime", dateTimePicker1.Value);
+                    uiSwitch1.Active = ini.ReadBool("Setup", "IsUseDuty", true);
+                    dateTimePicker2.Value = ini.ReadDateTime("Setup", "RestartTime", dateTimePicker2.Value);
+                    for (int i = 1; i < 6; i++)
+                    {
+                        for (int j = 1; j < 8; j++)
+                        {
+                            int row = i;
+                            if (i == 2 || i == 3)
+                            {
+                                row = 2;
+                            }
+                            else if (i > 3)
+                            {
+                                row = i - 1;
+                            }
+
+                            string ctrl_name = string.Format("day{0}_comboBox{1}", j, i);
+                            Control[] cb = uiGroupBox2.Controls.Find(ctrl_name, true);
+                            if (cb.Length > 0)
+                            {
+                                ComboBox tt = cb[0] as ComboBox;
+                                tt.Text = ini.ReadString("Setup", ctrl_name, tt.Text);
+                            }
+                        }
+                    }
+                    duty_label.ForeColor = ini.ReadColor("Setup", "DutyColor", duty_label.ForeColor);
+                    Duty_ColorPicker.Value = duty_label.ForeColor;
                     return true;
                 }
                 else

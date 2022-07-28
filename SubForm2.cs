@@ -26,7 +26,7 @@ namespace SafeBroadcast
         {
             OpenFileDialog dialog = new OpenFileDialog();
             dialog.Title = "请选择文本文件";
-            dialog.Filter = "文本文件(*.txt)|*.txt";
+            dialog.Filter = "文本文件(*.txt)|*.txt|所有文件(*.*)|*.*";
             if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
                 header_label.Visible = true;
@@ -112,7 +112,7 @@ namespace SafeBroadcast
         {
             OpenFileDialog dialog = new OpenFileDialog();
             dialog.Title = "请选择富文本文件";
-            dialog.Filter = "文本文件(*.rtf)|*.rtf";
+            dialog.Filter = "文本文件(*.rtf)|*.rtf|所有文件(*.*)|*.*";
             if (dialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
                 header_label.Visible = false;
@@ -171,10 +171,13 @@ namespace SafeBroadcast
             Page2_UpDown.Enabled = uiSwitch1.Active;
         }
 
+        string sub2_ini = Path.Combine(Environment.CurrentDirectory, "sub2.ini");
+
         public override bool SetParam(int fromPageIndex, params object[] objects)
         {
             if (objects.Length == 1)
             {
+                //接收第一屏的参数：是否显示排班
                 if (fromPageIndex == 1001)
                 {
                     duty_label.Visible = (bool)objects[0];
@@ -182,24 +185,120 @@ namespace SafeBroadcast
                 }
                 else
                 {
-                    if (Header_UpDown.Value < 0)
+                    string parm_recv = objects[0].ToString();
+                    if (parm_recv == "第2屏参数")
                     {
-                        return false;
-                    }
-                    if (Page2_UpDown.Value <= 0)
-                    {
-                        return false;
-                    }
-                    PublicArgs.page_stay[1] = uiSwitch1.Active ? Page2_UpDown.Value : 0;
-                    PublicArgs.header_text = header_label.Text;
-                    PublicArgs.header_color = header_label.ForeColor;
-                    PublicArgs.header_font = header_label.Font;
-                    PublicArgs.content_text = inform_richtext.Text;
-                    PublicArgs.content_color = inform_richtext.ForeColor;
-                    PublicArgs.content_font = inform_richtext.Font;
 
-                    //PublicArgs.is_use_second_screen = uiSwitch1.Active;
-                    return true;
+                        if (Header_UpDown.Value < 0)
+                        {
+                            return false;
+                        }
+                        if (Page2_UpDown.Value <= 0)
+                        {
+                            return false;
+                        }
+                        PublicArgs.page_stay[1] = uiSwitch1.Active ? Page2_UpDown.Value : 0;
+                        PublicArgs.header_text = header_label.Text;
+                        PublicArgs.header_color = header_label.ForeColor;
+                        PublicArgs.header_font = header_label.Font;
+                        PublicArgs.content_text = inform_richtext.Text;
+                        PublicArgs.content_color = inform_richtext.ForeColor;
+                        PublicArgs.content_font = inform_richtext.Font;
+
+                        //PublicArgs.is_use_second_screen = uiSwitch1.Active;
+
+                        //写入当前配置
+                        IniFile ini = new IniFile(sub2_ini);
+                        //IniFile类支持的数据类型
+                        //bool，byte，byte[]，char，Color，Datetime，decimal，double，float，int，
+                        //long，Point，PointF，sbyte，short，Size，SizeF，uint，ulong，ushort，Struct*
+                        ini.Write("Setup", "IsSecondScreen", uiSwitch1.Active);
+                        ini.Write("Setup", "PageStay", Page2_UpDown.Value);
+                        ini.Write("Setup", "HeaderText", header_label.Text);
+                        ini.Write("Setup", "HeaderColor", header_label.ForeColor);
+                        ini.Write("Setup", "HeaderTop", Header_UpDown.Value);
+                        ini.Write("Setup", "ContentFile", file);
+                        ini.Write("Setup", "ContentColor", inform_richtext.ForeColor);
+                        ini.Write("Setup", "RtfFile", PublicArgs.rtf_filepath);
+                        ini.Write("Setup", "Align", Align_ComboBox.SelectedIndex);
+                        ini.Write("Setup", "Encode", Encode_ComboBox.SelectedIndex);
+                        ini.Write("Setup", "HeaderTop", Header_UpDown.Value);
+                        ini.UpdateFile();
+
+                        return true;
+                    }
+                    //加载上次参数
+                    else if (parm_recv == "自动加载")
+                    {
+                        //读取当前配置
+                        IniFile ini = new IniFile(sub2_ini);
+                        uiSwitch1.Active = ini.ReadBool("Setup", "IsSecondScreen", false);
+                        Page2_UpDown.Value = ini.ReadInt("Setup", "PageStay", 10);
+
+                        header_label.Text = ini.ReadString("Setup", "HeaderText", "重要保障期通知");
+                        header_label.ForeColor = ini.ReadColor("Setup", "HeaderColor", header_label.ForeColor);
+                        Header_ColorPicker.Value = header_label.ForeColor;
+                        Header_UpDown.Value = ini.ReadInt("Setup", "HeaderTop", Header_UpDown.Value);
+
+                        Align_ComboBox.SelectedIndex = ini.ReadInt("Setup", "Align", 1);
+                        file = ini.ReadString("Setup", "ContentFile", "");
+                        inform_richtext.ForeColor = ini.ReadColor("Setup", "ContentColor", inform_richtext.ForeColor);
+                        Main_ColorPicker.Value = inform_richtext.ForeColor;
+
+                        PublicArgs.rtf_filepath = ini.ReadString("Setup", "RtfFile", "");
+                        if (PublicArgs.rtf_filepath != "")
+                        {
+                            if (!File.Exists(PublicArgs.rtf_filepath))
+                            {
+                                ShowWarningNotifier("无法加载此富文本文件！");
+                                return false;
+                            }
+                            header_label.Visible = false;
+                            inform_richtext.LoadFile(PublicArgs.rtf_filepath, RichTextBoxStreamType.RichText);
+                            Txt_Button.ShowTips = false;
+                            Rtf_Button.ShowTips = true;
+                        }
+                        else
+                        {
+                            if (file != "")
+                            {
+                                if (!File.Exists(file))
+                                {
+                                    ShowWarningNotifier("无法加载此文本文件！");
+                                    return false;
+                                }
+                                Encode_ComboBox.SelectedIndex = ini.ReadInt("Setup", "Encode", 1);
+                                FileStream fs = new FileStream(file, FileMode.Open, FileAccess.Read);
+                                StreamReader sr = null;
+                                switch (Encode_ComboBox.SelectedIndex)
+                                {
+                                    case 0:
+                                        sr = new StreamReader(fs, Encoding.UTF8);
+                                        break;
+                                    case 1:
+                                        sr = new StreamReader(fs, Encoding.Default);
+                                        break;
+                                    case 2:
+                                        sr = new StreamReader(fs, Encoding.GetEncoding("GB2312"));
+                                        break;
+                                    case 3:
+                                        sr = new StreamReader(fs, Encoding.Unicode);
+                                        break;
+                                    case 4:
+                                        sr = new StreamReader(fs, Encoding.ASCII);
+                                        break;
+                                }
+                                inform_richtext.Text = sr.ReadToEnd();
+                                Txt_Button.ShowTips = true;
+                                PublicArgs.content_text = inform_richtext.Text;
+                            }
+                        }
+                        return true;
+                    }
+                    else
+                    {
+                        return false;
+                    }
                 }
             }
             else

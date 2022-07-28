@@ -28,10 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.TreeNode treeNode7 = new System.Windows.Forms.TreeNode("安播设置");
-            System.Windows.Forms.TreeNode treeNode8 = new System.Windows.Forms.TreeNode("重保发布");
-            System.Windows.Forms.TreeNode treeNode9 = new System.Windows.Forms.TreeNode("视频展示");
+            System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("安播设置");
+            System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("重保发布");
+            System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("视频展示");
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
@@ -39,7 +38,6 @@
             this.Submit = new Sunny.UI.UISymbolButton();
             this.uiTabControl1 = new Sunny.UI.UITabControl();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.RestartTimer = new System.Windows.Forms.Timer(this.components);
             this.statusStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -49,9 +47,9 @@
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 581);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 584);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(1165, 25);
+            this.statusStrip1.Size = new System.Drawing.Size(1165, 22);
             this.statusStrip1.TabIndex = 46;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -60,32 +58,35 @@
             this.toolStripStatusLabel1.Font = new System.Drawing.Font("微软雅黑", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.toolStripStatusLabel1.ForeColor = System.Drawing.Color.DimGray;
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(320, 19);
+            this.toolStripStatusLabel1.Size = new System.Drawing.Size(260, 17);
             this.toolStripStatusLabel1.Text = "Copyright© by 陕西广电融媒体集团 · 播出部";
             // 
             // Header
             // 
             this.Header.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Header.DropMenuFont = new System.Drawing.Font("微软雅黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Header.Font = new System.Drawing.Font("方正姚体", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Header.DropMenuFont = new System.Drawing.Font("点字倔强黑", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            this.Header.Font = new System.Drawing.Font("点字倔强黑", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Header.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
             this.Header.Location = new System.Drawing.Point(0, 35);
             this.Header.MenuStyle = Sunny.UI.UIMenuStyle.Custom;
             this.Header.Name = "Header";
             this.Header.NodeAlignment = System.Drawing.StringAlignment.Near;
             this.Header.NodeInterval = 200;
-            treeNode7.Name = "page1_btn";
-            treeNode7.Text = "安播设置";
-            treeNode7.ToolTipText = "安播设置子页";
-            treeNode8.Name = "page2_btn";
-            treeNode8.Text = "重保发布";
-            treeNode8.ToolTipText = "重保发布子页";
-            treeNode9.Name = "page3_btn";
-            treeNode9.Text = "视频展示";
+            treeNode1.Name = "page1_btn";
+            treeNode1.NodeFont = new System.Drawing.Font("点字倔强黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            treeNode1.Text = "安播设置";
+            treeNode1.ToolTipText = "安播设置子页";
+            treeNode2.Name = "page2_btn";
+            treeNode2.NodeFont = new System.Drawing.Font("点字倔强黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            treeNode2.Text = "重保发布";
+            treeNode2.ToolTipText = "重保发布子页";
+            treeNode3.Name = "page3_btn";
+            treeNode3.NodeFont = new System.Drawing.Font("点字倔强黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
+            treeNode3.Text = "视频展示";
             this.Header.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
-            treeNode7,
-            treeNode8,
-            treeNode9});
+            treeNode1,
+            treeNode2,
+            treeNode3});
             this.Header.NodeSize = new System.Drawing.Size(200, 45);
             this.Header.Size = new System.Drawing.Size(1165, 80);
             this.Header.TabIndex = 48;
@@ -101,7 +102,7 @@
             this.Submit.FillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(235)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
             this.Submit.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.Submit.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(184)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.Submit.Font = new System.Drawing.Font("微软雅黑", 24F);
+            this.Submit.Font = new System.Drawing.Font("点字倔强黑", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Submit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.Submit.Location = new System.Drawing.Point(1029, 48);
             this.Submit.MinimumSize = new System.Drawing.Size(1, 1);
@@ -137,7 +138,7 @@
             this.uiTabControl1.Name = "uiTabControl1";
             this.uiTabControl1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.uiTabControl1.SelectedIndex = 0;
-            this.uiTabControl1.Size = new System.Drawing.Size(1165, 466);
+            this.uiTabControl1.Size = new System.Drawing.Size(1165, 469);
             this.uiTabControl1.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.uiTabControl1.TabBackColor = System.Drawing.Color.White;
             this.uiTabControl1.TabIndex = 115;
@@ -156,14 +157,9 @@
             this.pictureBox1.TabIndex = 50;
             this.pictureBox1.TabStop = false;
             // 
-            // RestartTimer
-            // 
-            this.RestartTimer.Enabled = true;
-            this.RestartTimer.Interval = 60000;
-            this.RestartTimer.Tick += new System.EventHandler(this.RestartTimer_Tick);
-            // 
             // MainForm
             // 
+            this.AcceptButton = this.Submit;
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.ClientSize = new System.Drawing.Size(1165, 606);
             this.CloseAskString = "确认退出？";
@@ -180,6 +176,7 @@
             this.ShowTitleIcon = true;
             this.Text = "安全播出信息发布";
             this.TextAlignment = System.Drawing.StringAlignment.Center;
+            this.TitleFont = new System.Drawing.Font("点字倔强黑", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.ZoomScaleRect = new System.Drawing.Rectangle(15, 15, 800, 450);
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.MainForm_FormClosing);
@@ -199,6 +196,5 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private Sunny.UI.UISymbolButton Submit;
         private Sunny.UI.UITabControl uiTabControl1;
-        private System.Windows.Forms.Timer RestartTimer;
     }
 }
