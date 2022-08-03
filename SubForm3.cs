@@ -168,6 +168,7 @@ namespace SafeBroadcast
                     Page3_UpDown.Value = ini.ReadInt("Setup", "PageStay", 10);
                     VolumeBar.Value = ini.ReadInt("Setup", "Volume", 10);
                     PublicArgs.vedio_filepath = ini.ReadString("Setup", "Video", "");
+                    video_path = PublicArgs.vedio_filepath;
                     if (PublicArgs.vedio_filepath != "" && !File.Exists(PublicArgs.vedio_filepath))
                     {
                         ShowErrorNotifier("无法加载此视频文件！");

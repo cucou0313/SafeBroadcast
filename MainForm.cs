@@ -105,6 +105,13 @@ namespace SafeBroadcast
             }
         }
 
+        private string int_format(int input)
+        {
+            if (input < 10)
+                return "0" + input;
+            return input.ToString();
+        }
+
         private void register_task()
         {
             //1.首先编辑bat脚本(或者使用SCHTASK 修改XML的方式)
@@ -120,30 +127,42 @@ namespace SafeBroadcast
             sw.Close();
             fs.Close();
 
-            //因为计划任务cmd方式只支持Hour:Minute，所以程序的自动退出时间需要和计划任务的启动时间区分开
-            //将dateTimePicker2.Value设置为程序关闭时间，+1分钟为计划任务自启时间
-            DateTime date1 = new System.DateTime(2022, 7, 28, PublicArgs.restart_hour, PublicArgs.restart_min, 00);
-            DateTime task_time = date1.AddMinutes(1);
-            int task_hour = task_time.Hour;
-            int task_min = task_time.Minute;
+            try
+            {
+                //因为计划任务cmd方式只支持Hour:Minute，所以程序的自动退出时间需要和计划任务的启动时间区分开
+                //将dateTimePicker2.Value设置为程序关闭时间，+1分钟为计划任务自启时间
+                DateTime date1 = new System.DateTime(2022, 7, 28, PublicArgs.restart_hour, PublicArgs.restart_min, 00);
+                DateTime task_time = date1.AddMinutes(1);
+                int task_hour = task_time.Hour;
+                int task_min = task_time.Minute;
 
-            //2.使用cmd创建计划任务，绑定为bat脚本
-            Process proc = new Process();
-            //使用 /f 参数禁止显示确认消息
-            string cmd = string.Format(
-                "schtasks /create /tn \"{0}\" /tr \"{1}\" /sc DAILY /st {2}:{3} /f", "MySBTask", bat_path, task_hour, task_min);
-            Console.WriteLine(cmd);
-            proc.StartInfo.CreateNoWindow = true;
-            proc.StartInfo.FileName = "cmd.exe";
-            proc.StartInfo.UseShellExecute = false;
-            proc.StartInfo.RedirectStandardError = true;
-            proc.StartInfo.RedirectStandardInput = true;
-            proc.StartInfo.RedirectStandardOutput = true;
-            proc.Start();
-            proc.StandardInput.WriteLine(cmd);
-            proc.StandardInput.WriteLine("exit");
-            string outStr = proc.StandardOutput.ReadToEnd();
-            proc.Close();
+                //2.使用cmd创建计划任务，绑定为bat脚本
+                Process proc = new Process();
+                //使用 /f 参数禁止显示确认消息
+                string cmd = string.Format(
+                    "schtasks /create /tn \"{0}\" /tr \"{1}\" /sc DAILY /st {2}:{3} /f", "MySBTask", bat_path, int_format(task_hour), int_format(task_min));
+                //Log.log(cmd);
+                proc.StartInfo.CreateNoWindow = true;
+                proc.StartInfo.FileName = "cmd.exe";
+                proc.StartInfo.UseShellExecute = false;
+                proc.StartInfo.RedirectStandardError = true;
+                proc.StartInfo.RedirectStandardInput = true;
+                proc.StartInfo.RedirectStandardOutput = true;
+                proc.Start();
+                proc.StandardInput.WriteLine(cmd);
+                proc.StandardInput.WriteLine("exit");
+                string outStr = proc.StandardOutput.ReadToEnd();
+                Log.log(outStr);
+                proc.Close();
+            }
+            catch (Exception ex)
+            {
+                Log.log(ex.ToString());
+            }
+            finally
+            {
+                Log.log("自动启动任务注册成功。");
+            }
         }
     }
 }
