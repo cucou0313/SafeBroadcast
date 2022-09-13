@@ -78,6 +78,12 @@
     <Compile Include="FirstScreen.Designer.cs">
       <DependentUpon>FirstScreen.cs</DependentUpon>
     </Compile>
+    <Compile Include="FourthScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FourthScreen.Designer.cs">
+      <DependentUpon>FourthScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="Log.cs" />
     <Compile Include="MainForm.cs">
       <SubType>Form</SubType>
@@ -118,6 +124,12 @@
     <Compile Include="SubForm3.Designer.cs">
       <DependentUpon>SubForm3.cs</DependentUpon>
     </Compile>
+    <Compile Include="SubForm4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForm4.Designer.cs">
+      <DependentUpon>SubForm4.cs</DependentUpon>
+    </Compile>
     <Compile Include="ThirdScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +142,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FirstScreen.resx">
       <DependentUpon>FirstScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FourthScreen.resx">
+      <DependentUpon>FourthScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
@@ -158,6 +173,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SubForm3.resx">
       <DependentUpon>SubForm3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForm4.resx">
+      <DependentUpon>SubForm4.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ThirdScreen.resx">
       <DependentUpon>ThirdScreen.cs</DependentUpon>
@@ -211,6 +229,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="awyv6-9mvgl-001.ico" />
+    <None Include="Resources\二十大背景.png" />
+    <None Include="Resources\已进行.png" />
+    <None Include="Resources\倒计时.png" />
     <None Include="Resources\播放.png" />
     <None Include="Resources\视频.png" />
   </ItemGroup>

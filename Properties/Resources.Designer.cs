@@ -93,9 +93,39 @@ namespace SafeBroadcast.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
+        internal static System.Drawing.Bitmap 二十大背景 {
+            get {
+                object obj = ResourceManager.GetObject("二十大背景", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 倒计时 {
+            get {
+                object obj = ResourceManager.GetObject("倒计时", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
         internal static System.Drawing.Bitmap 字体 {
             get {
                 object obj = ResourceManager.GetObject("字体", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   查找 System.Drawing.Bitmap 类型的本地化资源。
+        /// </summary>
+        internal static System.Drawing.Bitmap 已进行 {
+            get {
+                object obj = ResourceManager.GetObject("已进行", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

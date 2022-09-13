@@ -37,6 +37,11 @@ namespace SafeBroadcast
                             AddPage(new ThirdScreen());
                             only_first = true;
                             break;
+                        case 3:
+                            //二十大倒计时
+                            AddPage(new FourthScreen());
+                            only_first = true;
+                            break;
                     }
                 }
             }
@@ -58,6 +63,7 @@ namespace SafeBroadcast
                 System.Environment.Exit(0);
             }
 
+            //每十秒计算一次最新排班信息并下发
             if (duty_update++ > 10)
             {
                 string duty_content = PublicArgs.day_in_week();
@@ -85,22 +91,22 @@ namespace SafeBroadcast
             {
                 stays = new int[PublicArgs.page_stay.Length];
                 i = 0;
+                //重头开始时，也将后台视频关闭
+                if (PublicArgs.MyVlc != null)
+                {
+                    PublicArgs.MyVlc.Stop();
+                }
             }
 
             //换页
             if (i != page_index)
             {
+                //换页到了视频页，开始播放
                 if (2001 + i == 2003)
                 {
                     PublicArgs.MyVlc.Play();
                 }
-                else
-                {
-                    if (PublicArgs.MyVlc != null)
-                    {
-                        PublicArgs.MyVlc.Stop();
-                    }
-                }
+
                 SelectPage(2001 + i);
                 Switch_ProcessBar.Maximum = PublicArgs.page_stay[i];
                 Switch_ProcessBar.Value = 0;

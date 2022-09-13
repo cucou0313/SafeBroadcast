@@ -18,12 +18,7 @@ namespace SafeBroadcast
         public static string rtf_filepath = "";
         //TXT标题的上间距
         public static int header_top = 10;
-        //第一页的停留时间，默认60秒
-        //public static int page1_stay = 60;
-        //第二页的停留时间
-        //public static int page2_stay = 30;
-        //是否启用第二屏
-        //public static bool is_use_second_screen = false;
+
         //是否启用排班
         public static bool is_use_duty = true;
         //视频文件地址
@@ -31,7 +26,7 @@ namespace SafeBroadcast
         public static int volume = 0;
         public static VlcPlayer.VlcPlayerBase MyVlc = null;
         //各子页的停留时间
-        public static int[] page_stay = new int[3];
+        public static int[] page_stay = new int[4];
         //自重启时间
         public static int restart_hour = 4;
         public static int restart_min = 15;
@@ -39,6 +34,13 @@ namespace SafeBroadcast
         public static bool is_auto_load = false;
         //是否自动进入展示（用于夜间自启）
         public static bool is_auto_show = false;
+
+        //倒计时开始时间
+        public static DateTime count_down_start_time;
+        //倒计时页背景图片
+        public static string count_down_bg = "";
+        //是否启用计时
+        public static bool is_use_count_down = true;
 
         /// <summary>
         /// 计算当天为星期几

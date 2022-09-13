@@ -1931,3 +1931,1398 @@ D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
 
 2022-07-29-星期五 10:35:21->自动启动任务注册成功。
 2022-07-29-星期五 10:35:23->退出程序
+2022-09-12-星期一 21:06:27->安全播出计时程序运行
+2022-09-12-星期一 21:06:27->安全播出计时程序运行
+2022-09-12-星期一 21:06:52->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-12-星期一 21:06:52->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-12-星期一 21:06:52->自动启动任务注册成功。
+2022-09-12-星期一 21:07:41->退出程序
+2022-09-12-星期一 21:10:50->安全播出计时程序运行
+2022-09-12-星期一 21:10:50->安全播出计时程序运行
+2022-09-12-星期一 21:10:52->配置自动加载成功！
+2022-09-12-星期一 21:10:55->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-12-星期一 21:10:55->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-12-星期一 21:10:55->自动启动任务注册成功。
+2022-09-12-星期一 21:11:50->退出程序
+2022-09-12-星期一 21:38:31->安全播出计时程序运行
+2022-09-12-星期一 21:38:31->安全播出计时程序运行
+2022-09-12-星期一 21:38:34->配置自动加载成功！
+2022-09-12-星期一 21:38:38->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-12-星期一 21:38:39->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-12-星期一 21:38:39->自动启动任务注册成功。
+2022-09-12-星期一 21:43:28->退出程序
+2022-09-12-星期一 22:22:54->安全播出计时程序运行
+2022-09-12-星期一 22:22:55->安全播出计时程序运行
+2022-09-12-星期一 22:22:57->配置自动加载成功！
+2022-09-12-星期一 22:22:58->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-12-星期一 22:22:58->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-12-星期一 22:22:58->自动启动任务注册成功。
+2022-09-12-星期一 22:23:56->退出程序
+2022-09-12-星期一 22:23:57->退出程序
+2022-09-12-星期一 22:24:50->安全播出计时程序运行
+2022-09-12-星期一 22:24:51->安全播出计时程序运行
+2022-09-12-星期一 22:24:53->配置自动加载成功！
+2022-09-12-星期一 22:24:56->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-12-星期一 22:24:56->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-12-星期一 22:24:56->自动启动任务注册成功。
+2022-09-12-星期一 22:25:20->退出程序
+2022-09-12-星期一 22:26:39->安全播出计时程序运行
+2022-09-12-星期一 22:26:40->安全播出计时程序运行
+2022-09-12-星期一 22:26:42->配置自动加载成功！
+2022-09-12-星期一 22:26:44->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-12-星期一 22:26:44->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-12-星期一 22:26:44->自动启动任务注册成功。
+2022-09-12-星期一 22:27:01->退出程序
+2022-09-12-星期一 22:29:11->安全播出计时程序运行
+2022-09-12-星期一 22:29:12->安全播出计时程序运行
+2022-09-12-星期一 22:29:14->配置自动加载成功！
+2022-09-12-星期一 22:29:16->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-12-星期一 22:29:16->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-12-星期一 22:29:16->自动启动任务注册成功。
+2022-09-12-星期一 22:29:33->退出程序
+2022-09-12-星期一 22:29:54->安全播出计时程序运行
+2022-09-12-星期一 22:29:54->安全播出计时程序运行
+2022-09-12-星期一 22:29:56->配置自动加载成功！
+2022-09-12-星期一 22:29:57->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-12-星期一 22:29:57->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-12-星期一 22:29:57->自动启动任务注册成功。
+2022-09-12-星期一 22:50:06->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-12-星期一 22:50:06->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-12-星期一 22:50:06->自动启动任务注册成功。
+2022-09-12-星期一 22:50:30->退出程序
+2022-09-12-星期一 22:55:34->安全播出计时程序运行
+2022-09-12-星期一 22:55:34->安全播出计时程序运行
+2022-09-12-星期一 22:55:36->配置自动加载成功！
+2022-09-12-星期一 22:55:41->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-12-星期一 22:55:41->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-12-星期一 22:55:41->自动启动任务注册成功。
+2022-09-12-星期一 22:55:51->退出程序
+2022-09-12-星期一 22:56:09->安全播出计时程序运行
+2022-09-12-星期一 22:56:10->安全播出计时程序运行
+2022-09-12-星期一 22:56:13->配置自动加载成功！
+2022-09-12-星期一 22:56:14->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-12-星期一 22:56:14->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-12-星期一 22:56:14->自动启动任务注册成功。
+2022-09-12-星期一 22:56:21->退出程序
+2022-09-12-星期一 22:58:23->安全播出计时程序运行
+2022-09-12-星期一 22:58:24->安全播出计时程序运行
+2022-09-12-星期一 22:58:33->配置自动加载成功！
+2022-09-12-星期一 22:58:34->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-12-星期一 22:58:34->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-12-星期一 22:58:34->自动启动任务注册成功。
+2022-09-12-星期一 22:58:43->退出程序
+2022-09-12-星期一 22:59:32->安全播出计时程序运行
+2022-09-12-星期一 22:59:32->安全播出计时程序运行
+2022-09-12-星期一 22:59:34->配置自动加载成功！
+2022-09-12-星期一 22:59:35->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-12-星期一 22:59:35->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-12-星期一 22:59:35->自动启动任务注册成功。
+2022-09-12-星期一 22:59:48->退出程序
+2022-09-12-星期一 23:00:08->安全播出计时程序运行
+2022-09-12-星期一 23:00:09->安全播出计时程序运行
+2022-09-12-星期一 23:00:11->配置自动加载成功！
+2022-09-12-星期一 23:00:12->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-12-星期一 23:00:12->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-12-星期一 23:00:12->自动启动任务注册成功。
+2022-09-12-星期一 23:03:47->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-12-星期一 23:03:47->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-12-星期一 23:03:47->自动启动任务注册成功。
+2022-09-12-星期一 23:04:41->退出程序
+2022-09-12-星期一 23:05:00->安全播出计时程序运行
+2022-09-12-星期一 23:05:01->安全播出计时程序运行
+2022-09-12-星期一 23:05:03->配置自动加载成功！
+2022-09-12-星期一 23:05:11->退出程序
+2022-09-12-星期一 23:07:44->安全播出计时程序运行
+2022-09-12-星期一 23:07:44->安全播出计时程序运行
+2022-09-12-星期一 23:07:47->配置自动加载成功！
+2022-09-12-星期一 23:07:50->退出程序
+2022-09-12-星期一 23:13:08->安全播出计时程序运行
+2022-09-12-星期一 23:13:09->安全播出计时程序运行
+2022-09-12-星期一 23:13:11->配置自动加载成功！
+2022-09-12-星期一 23:13:12->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-12-星期一 23:13:12->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-12-星期一 23:13:12->自动启动任务注册成功。
+2022-09-12-星期一 23:13:23->退出程序
+2022-09-12-星期一 23:18:55->安全播出计时程序运行
+2022-09-12-星期一 23:18:56->安全播出计时程序运行
+2022-09-12-星期一 23:18:58->配置自动加载成功！
+2022-09-12-星期一 23:18:59->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-12-星期一 23:18:59->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-12-星期一 23:18:59->自动启动任务注册成功。
+2022-09-12-星期一 23:19:17->退出程序
+2022-09-12-星期一 23:43:49->安全播出计时程序运行
+2022-09-12-星期一 23:43:49->安全播出计时程序运行
+2022-09-12-星期一 23:43:52->配置自动加载成功！
+2022-09-12-星期一 23:43:53->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-12-星期一 23:43:53->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-12-星期一 23:43:53->自动启动任务注册成功。
+2022-09-12-星期一 23:44:10->退出程序
+2022-09-12-星期一 23:44:27->安全播出计时程序运行
+2022-09-12-星期一 23:44:27->安全播出计时程序运行
+2022-09-12-星期一 23:44:30->配置自动加载成功！
+2022-09-12-星期一 23:44:30->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-12-星期一 23:44:30->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-12-星期一 23:44:30->自动启动任务注册成功。
+2022-09-12-星期一 23:44:50->退出程序
+2022-09-12-星期一 23:45:22->安全播出计时程序运行
+2022-09-12-星期一 23:45:22->安全播出计时程序运行
+2022-09-12-星期一 23:45:24->配置自动加载成功！
+2022-09-12-星期一 23:45:25->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-12-星期一 23:45:25->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-12-星期一 23:45:25->自动启动任务注册成功。
+2022-09-12-星期一 23:45:34->退出程序
+2022-09-12-星期一 23:47:44->安全播出计时程序运行
+2022-09-12-星期一 23:47:44->安全播出计时程序运行
+2022-09-12-星期一 23:47:46->配置自动加载成功！
+2022-09-12-星期一 23:47:50->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-12-星期一 23:47:51->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-12-星期一 23:47:51->自动启动任务注册成功。
+2022-09-12-星期一 23:48:03->退出程序
+2022-09-12-星期一 23:50:01->安全播出计时程序运行
+2022-09-12-星期一 23:50:01->安全播出计时程序运行
+2022-09-12-星期一 23:50:03->配置自动加载成功！
+2022-09-12-星期一 23:50:04->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-12-星期一 23:50:04->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-12-星期一 23:50:04->自动启动任务注册成功。
+2022-09-12-星期一 23:50:14->退出程序
+2022-09-12-星期一 23:50:50->安全播出计时程序运行
+2022-09-12-星期一 23:50:50->安全播出计时程序运行
+2022-09-12-星期一 23:50:53->配置自动加载成功！
+2022-09-12-星期一 23:50:53->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-12-星期一 23:50:53->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-12-星期一 23:50:53->自动启动任务注册成功。
+2022-09-12-星期一 23:51:07->退出程序
+2022-09-12-星期一 23:55:41->安全播出计时程序运行
+2022-09-12-星期一 23:55:41->安全播出计时程序运行
+2022-09-12-星期一 23:55:43->配置自动加载成功！
+2022-09-12-星期一 23:55:45->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-12-星期一 23:55:45->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-12-星期一 23:55:45->自动启动任务注册成功。
+2022-09-12-星期一 23:56:02->退出程序
+2022-09-12-星期一 23:57:14->安全播出计时程序运行
+2022-09-12-星期一 23:57:14->安全播出计时程序运行
+2022-09-12-星期一 23:57:17->配置自动加载成功！
+2022-09-12-星期一 23:57:18->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-12-星期一 23:57:18->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-12-星期一 23:57:18->自动启动任务注册成功。
+2022-09-12-星期一 23:57:40->退出程序
+2022-09-12-星期一 23:58:04->安全播出计时程序运行
+2022-09-12-星期一 23:58:05->安全播出计时程序运行
+2022-09-12-星期一 23:58:07->配置自动加载成功！
+2022-09-12-星期一 23:58:08->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-12-星期一 23:58:08->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-12-星期一 23:58:08->自动启动任务注册成功。
+2022-09-12-星期一 23:58:20->退出程序
+2022-09-12-星期一 23:58:33->安全播出计时程序运行
+2022-09-12-星期一 23:58:34->安全播出计时程序运行
+2022-09-12-星期一 23:58:36->配置自动加载成功！
+2022-09-12-星期一 23:58:37->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-12-星期一 23:58:37->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-12-星期一 23:58:37->自动启动任务注册成功。
+2022-09-12-星期一 23:59:04->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-12-星期一 23:59:04->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-12-星期一 23:59:04->自动启动任务注册成功。
+2022-09-13-星期二 0:00:09->退出程序
+2022-09-13-星期二 0:13:19->安全播出计时程序运行
+2022-09-13-星期二 0:13:19->安全播出计时程序运行
+2022-09-13-星期二 0:13:22->配置自动加载成功！
+2022-09-13-星期二 0:13:24->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 0:13:24->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 0:13:24->自动启动任务注册成功。
+2022-09-13-星期二 0:13:36->退出程序
+2022-09-13-星期二 0:15:20->安全播出计时程序运行
+2022-09-13-星期二 0:15:21->安全播出计时程序运行
+2022-09-13-星期二 0:15:23->配置自动加载成功！
+2022-09-13-星期二 0:15:30->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 0:15:30->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 0:15:30->自动启动任务注册成功。
+2022-09-13-星期二 0:16:14->退出程序
+2022-09-13-星期二 10:44:18->安全播出计时程序运行
+2022-09-13-星期二 10:44:19->安全播出计时程序运行
+2022-09-13-星期二 10:44:21->配置自动加载成功！
+2022-09-13-星期二 10:44:28->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 10:44:28->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 10:44:28->自动启动任务注册成功。
+2022-09-13-星期二 10:44:44->退出程序
+2022-09-13-星期二 10:47:45->安全播出计时程序运行
+2022-09-13-星期二 10:47:46->安全播出计时程序运行
+2022-09-13-星期二 10:47:48->配置自动加载成功！
+2022-09-13-星期二 10:47:49->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 10:47:49->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 10:47:49->自动启动任务注册成功。
+2022-09-13-星期二 10:47:58->退出程序
+2022-09-13-星期二 10:48:56->安全播出计时程序运行
+2022-09-13-星期二 10:48:56->安全播出计时程序运行
+2022-09-13-星期二 10:48:58->配置自动加载成功！
+2022-09-13-星期二 10:48:59->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 10:48:59->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 10:48:59->自动启动任务注册成功。
+2022-09-13-星期二 10:49:06->退出程序
+2022-09-13-星期二 10:49:24->安全播出计时程序运行
+2022-09-13-星期二 10:49:25->安全播出计时程序运行
+2022-09-13-星期二 10:49:27->配置自动加载成功！
+2022-09-13-星期二 10:49:27->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 10:49:28->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 10:49:28->自动启动任务注册成功。
+2022-09-13-星期二 10:49:49->退出程序
+2022-09-13-星期二 10:49:56->安全播出计时程序运行
+2022-09-13-星期二 10:49:57->安全播出计时程序运行
+2022-09-13-星期二 10:49:59->配置自动加载成功！
+2022-09-13-星期二 10:50:00->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 10:50:00->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 10:50:00->自动启动任务注册成功。
+2022-09-13-星期二 10:50:22->退出程序
+2022-09-13-星期二 11:37:51->安全播出计时程序运行
+2022-09-13-星期二 11:37:52->安全播出计时程序运行
+2022-09-13-星期二 11:37:54->配置自动加载成功！
+2022-09-13-星期二 11:37:55->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 11:37:55->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 11:37:55->自动启动任务注册成功。
+2022-09-13-星期二 11:38:07->退出程序
+2022-09-13-星期二 11:39:24->安全播出计时程序运行
+2022-09-13-星期二 11:39:24->安全播出计时程序运行
+2022-09-13-星期二 11:39:27->配置自动加载成功！
+2022-09-13-星期二 11:39:28->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 11:39:28->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 11:39:28->自动启动任务注册成功。
+2022-09-13-星期二 11:39:45->退出程序
+2022-09-13-星期二 11:39:53->安全播出计时程序运行
+2022-09-13-星期二 11:39:54->安全播出计时程序运行
+2022-09-13-星期二 11:39:56->配置自动加载成功！
+2022-09-13-星期二 11:39:57->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 11:39:57->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 11:39:57->自动启动任务注册成功。
+2022-09-13-星期二 11:40:09->退出程序
+2022-09-13-星期二 11:40:17->安全播出计时程序运行
+2022-09-13-星期二 11:40:17->安全播出计时程序运行
+2022-09-13-星期二 11:40:20->配置自动加载成功！
+2022-09-13-星期二 11:40:21->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 11:40:21->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 11:40:21->自动启动任务注册成功。
+2022-09-13-星期二 11:40:33->退出程序
+2022-09-13-星期二 11:40:45->安全播出计时程序运行
+2022-09-13-星期二 11:40:45->安全播出计时程序运行
+2022-09-13-星期二 11:40:48->配置自动加载成功！
+2022-09-13-星期二 11:40:49->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 11:40:49->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 11:40:49->自动启动任务注册成功。
+2022-09-13-星期二 11:41:09->退出程序
+2022-09-13-星期二 11:41:29->安全播出计时程序运行
+2022-09-13-星期二 11:41:30->安全播出计时程序运行
+2022-09-13-星期二 11:41:32->配置自动加载成功！
+2022-09-13-星期二 11:41:33->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 11:41:33->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 11:41:33->自动启动任务注册成功。
+2022-09-13-星期二 11:41:44->退出程序
+2022-09-13-星期二 11:41:55->安全播出计时程序运行
+2022-09-13-星期二 11:41:55->安全播出计时程序运行
+2022-09-13-星期二 11:41:58->配置自动加载成功！
+2022-09-13-星期二 11:41:59->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 11:41:59->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 11:41:59->自动启动任务注册成功。
+2022-09-13-星期二 11:42:12->退出程序
+2022-09-13-星期二 11:42:19->安全播出计时程序运行
+2022-09-13-星期二 11:42:19->安全播出计时程序运行
+2022-09-13-星期二 11:42:21->配置自动加载成功！
+2022-09-13-星期二 11:42:22->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 11:42:22->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 11:42:22->自动启动任务注册成功。
+2022-09-13-星期二 11:42:50->退出程序
+2022-09-13-星期二 11:43:12->安全播出计时程序运行
+2022-09-13-星期二 11:43:13->安全播出计时程序运行
+2022-09-13-星期二 11:43:15->配置自动加载成功！
+2022-09-13-星期二 11:43:16->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 11:43:16->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 11:43:16->自动启动任务注册成功。
+2022-09-13-星期二 11:43:42->退出程序
+2022-09-13-星期二 11:54:13->安全播出计时程序运行
+2022-09-13-星期二 11:54:14->安全播出计时程序运行
+2022-09-13-星期二 11:54:16->配置自动加载成功！
+2022-09-13-星期二 11:54:17->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 11:54:17->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 11:54:17->自动启动任务注册成功。
+2022-09-13-星期二 11:54:24->退出程序
+2022-09-13-星期二 11:55:39->安全播出计时程序运行
+2022-09-13-星期二 11:55:39->安全播出计时程序运行
+2022-09-13-星期二 11:55:41->配置自动加载成功！
+2022-09-13-星期二 11:55:43->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 11:55:43->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 11:55:43->自动启动任务注册成功。
+2022-09-13-星期二 11:56:00->退出程序
+2022-09-13-星期二 11:56:28->安全播出计时程序运行
+2022-09-13-星期二 11:56:29->安全播出计时程序运行
+2022-09-13-星期二 11:56:31->配置自动加载成功！
+2022-09-13-星期二 11:56:33->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 11:56:33->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 11:56:33->自动启动任务注册成功。
+2022-09-13-星期二 11:56:42->退出程序
+2022-09-13-星期二 11:56:51->安全播出计时程序运行
+2022-09-13-星期二 11:56:51->安全播出计时程序运行
+2022-09-13-星期二 11:56:53->配置自动加载成功！
+2022-09-13-星期二 11:56:54->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 11:56:54->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 11:56:54->自动启动任务注册成功。
+2022-09-13-星期二 12:02:09->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 12:02:09->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 12:02:09->自动启动任务注册成功。
+2022-09-13-星期二 12:02:16->退出程序
+2022-09-13-星期二 12:03:33->安全播出计时程序运行
+2022-09-13-星期二 12:03:34->安全播出计时程序运行
+2022-09-13-星期二 12:03:36->配置自动加载成功！
+2022-09-13-星期二 12:03:37->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 12:03:37->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 12:03:37->自动启动任务注册成功。
+2022-09-13-星期二 12:03:53->退出程序
+2022-09-13-星期二 12:04:08->安全播出计时程序运行
+2022-09-13-星期二 12:04:09->安全播出计时程序运行
+2022-09-13-星期二 12:04:11->配置自动加载成功！
+2022-09-13-星期二 12:04:12->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 12:04:12->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 12:04:12->自动启动任务注册成功。
+2022-09-13-星期二 12:04:33->退出程序
+2022-09-13-星期二 12:04:48->安全播出计时程序运行
+2022-09-13-星期二 12:04:48->安全播出计时程序运行
+2022-09-13-星期二 12:04:51->配置自动加载成功！
+2022-09-13-星期二 12:04:52->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 12:04:52->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 12:04:52->自动启动任务注册成功。
+2022-09-13-星期二 12:05:04->退出程序
+2022-09-13-星期二 12:05:10->安全播出计时程序运行
+2022-09-13-星期二 12:05:11->安全播出计时程序运行
+2022-09-13-星期二 12:05:13->配置自动加载成功！
+2022-09-13-星期二 12:05:14->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 12:05:14->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 12:05:14->自动启动任务注册成功。
+2022-09-13-星期二 12:05:33->退出程序
+2022-09-13-星期二 12:06:10->安全播出计时程序运行
+2022-09-13-星期二 12:06:11->安全播出计时程序运行
+2022-09-13-星期二 12:06:13->配置自动加载成功！
+2022-09-13-星期二 12:06:16->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 12:06:17->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 12:06:17->自动启动任务注册成功。
+2022-09-13-星期二 12:07:04->安全播出计时程序运行
+2022-09-13-星期二 12:07:05->安全播出计时程序运行
+2022-09-13-星期二 12:07:07->配置自动加载成功！
+2022-09-13-星期二 12:07:08->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 12:07:08->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 12:07:08->自动启动任务注册成功。
+2022-09-13-星期二 12:10:59->安全播出计时程序运行
+2022-09-13-星期二 12:11:00->安全播出计时程序运行
+2022-09-13-星期二 12:11:02->配置自动加载成功！
+2022-09-13-星期二 12:11:05->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 12:11:05->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 12:11:05->自动启动任务注册成功。
+2022-09-13-星期二 12:11:58->退出程序
+2022-09-13-星期二 12:15:55->安全播出计时程序运行
+2022-09-13-星期二 12:15:56->安全播出计时程序运行
+2022-09-13-星期二 12:15:58->配置自动加载成功！
+2022-09-13-星期二 12:16:03->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 12:16:03->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 12:16:03->自动启动任务注册成功。
+2022-09-13-星期二 12:16:31->安全播出计时程序运行
+2022-09-13-星期二 12:16:32->安全播出计时程序运行
+2022-09-13-星期二 12:16:34->配置自动加载成功！
+2022-09-13-星期二 12:16:48->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 12:16:48->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 12:16:48->自动启动任务注册成功。
+2022-09-13-星期二 12:20:24->安全播出计时程序运行
+2022-09-13-星期二 12:20:24->安全播出计时程序运行
+2022-09-13-星期二 12:20:27->配置自动加载成功！
+2022-09-13-星期二 12:20:30->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 12:20:30->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 12:20:30->自动启动任务注册成功。
+2022-09-13-星期二 12:23:41->安全播出计时程序运行
+2022-09-13-星期二 12:23:41->安全播出计时程序运行
+2022-09-13-星期二 12:23:43->配置自动加载成功！
+2022-09-13-星期二 12:23:48->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 12:23:48->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 12:23:48->自动启动任务注册成功。
+2022-09-13-星期二 12:24:00->退出程序
+2022-09-13-星期二 12:24:14->安全播出计时程序运行
+2022-09-13-星期二 12:24:14->安全播出计时程序运行
+2022-09-13-星期二 12:24:16->配置自动加载成功！
+2022-09-13-星期二 12:24:25->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 12:24:25->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 12:24:25->自动启动任务注册成功。
+2022-09-13-星期二 12:24:41->安全播出计时程序运行
+2022-09-13-星期二 12:24:41->安全播出计时程序运行
+2022-09-13-星期二 12:24:43->配置自动加载成功！
+2022-09-13-星期二 12:24:45->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 12:24:45->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 12:24:45->自动启动任务注册成功。
+2022-09-13-星期二 12:24:56->退出程序
+2022-09-13-星期二 12:29:45->安全播出计时程序运行
+2022-09-13-星期二 12:29:45->安全播出计时程序运行
+2022-09-13-星期二 12:29:48->配置自动加载成功！
+2022-09-13-星期二 12:29:50->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 12:29:50->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 12:29:50->自动启动任务注册成功。
+2022-09-13-星期二 12:30:35->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 12:30:35->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 12:30:35->自动启动任务注册成功。
+2022-09-13-星期二 12:31:20->退出程序
+2022-09-13-星期二 12:34:03->安全播出计时程序运行
+2022-09-13-星期二 12:34:04->安全播出计时程序运行
+2022-09-13-星期二 12:34:06->配置自动加载成功！
+2022-09-13-星期二 12:34:09->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 12:34:09->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 12:34:09->自动启动任务注册成功。
+2022-09-13-星期二 12:35:28->退出程序
+2022-09-13-星期二 12:35:57->安全播出计时程序运行
+2022-09-13-星期二 12:35:57->安全播出计时程序运行
+2022-09-13-星期二 12:35:59->配置自动加载成功！
+2022-09-13-星期二 12:36:00->开始时间 = 2022-07-28-星期四 15:38:40,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 12:36:00->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 07:06 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 12:36:00->自动启动任务注册成功。
+2022-09-13-星期二 12:37:21->开始时间 = 2022-05-16-星期一 0:00:00,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 12:37:21->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 04:16 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 12:37:21->自动启动任务注册成功。
+2022-09-13-星期二 12:38:41->退出程序
+2022-09-13-星期二 12:39:30->安全播出计时程序运行
+2022-09-13-星期二 12:39:30->安全播出计时程序运行
+2022-09-13-星期二 12:39:37->退出程序
+2022-09-13-星期二 12:48:39->安全播出计时程序运行
+2022-09-13-星期二 12:48:40->安全播出计时程序运行
+2022-09-13-星期二 12:48:42->配置自动加载成功！
+2022-09-13-星期二 12:48:47->退出程序
+2022-09-13-星期二 12:53:01->安全播出计时程序运行
+2022-09-13-星期二 12:53:01->安全播出计时程序运行
+2022-09-13-星期二 12:53:03->配置自动加载成功！
+2022-09-13-星期二 12:53:14->退出程序
+2022-09-13-星期二 12:55:40->安全播出计时程序运行
+2022-09-13-星期二 12:55:40->安全播出计时程序运行
+2022-09-13-星期二 12:55:43->配置自动加载成功！
+2022-09-13-星期二 12:55:52->退出程序
+2022-09-13-星期二 12:56:13->安全播出计时程序运行
+2022-09-13-星期二 12:56:13->安全播出计时程序运行
+2022-09-13-星期二 12:56:16->配置自动加载成功！
+2022-09-13-星期二 12:56:25->退出程序
+2022-09-13-星期二 13:20:51->安全播出计时程序运行
+2022-09-13-星期二 13:20:51->安全播出计时程序运行
+2022-09-13-星期二 13:20:53->配置自动加载成功！
+2022-09-13-星期二 13:21:16->退出程序
+2022-09-13-星期二 13:21:35->安全播出计时程序运行
+2022-09-13-星期二 13:21:35->安全播出计时程序运行
+2022-09-13-星期二 13:21:37->配置自动加载成功！
+2022-09-13-星期二 13:22:13->退出程序
+2022-09-13-星期二 13:22:39->安全播出计时程序运行
+2022-09-13-星期二 13:22:39->安全播出计时程序运行
+2022-09-13-星期二 13:22:42->配置自动加载成功！
+2022-09-13-星期二 13:22:49->开始时间 = 2022-05-16-星期一 0:00:00,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 13:22:49->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 04:16 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 13:22:49->自动启动任务注册成功。
+2022-09-13-星期二 13:23:28->退出程序
+2022-09-13-星期二 13:24:01->安全播出计时程序运行
+2022-09-13-星期二 13:24:02->安全播出计时程序运行
+2022-09-13-星期二 13:24:04->配置自动加载成功！
+2022-09-13-星期二 13:25:03->开始时间 = 2022-05-16-星期一 0:00:00,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 13:25:03->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 04:16 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 13:25:03->自动启动任务注册成功。
+2022-09-13-星期二 13:25:42->开始时间 = 2022-05-16-星期一 0:00:00,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 13:25:42->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 04:16 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 13:25:42->自动启动任务注册成功。
+2022-09-13-星期二 13:55:01->退出程序
+2022-09-13-星期二 13:56:10->安全播出计时程序运行
+2022-09-13-星期二 13:56:10->安全播出计时程序运行
+2022-09-13-星期二 13:56:12->配置自动加载成功！
+2022-09-13-星期二 13:57:45->安全播出计时程序运行
+2022-09-13-星期二 13:57:45->安全播出计时程序运行
+2022-09-13-星期二 13:57:47->配置自动加载成功！
+2022-09-13-星期二 13:58:16->退出程序
+2022-09-13-星期二 13:58:33->安全播出计时程序运行
+2022-09-13-星期二 13:58:33->安全播出计时程序运行
+2022-09-13-星期二 13:58:35->配置自动加载成功！
+2022-09-13-星期二 13:59:15->退出程序
+2022-09-13-星期二 13:59:25->安全播出计时程序运行
+2022-09-13-星期二 13:59:26->安全播出计时程序运行
+2022-09-13-星期二 13:59:28->配置自动加载成功！
+2022-09-13-星期二 13:59:35->退出程序
+2022-09-13-星期二 13:59:48->安全播出计时程序运行
+2022-09-13-星期二 13:59:48->安全播出计时程序运行
+2022-09-13-星期二 13:59:50->配置自动加载成功！
+2022-09-13-星期二 13:59:52->退出程序
+2022-09-13-星期二 13:59:56->安全播出计时程序运行
+2022-09-13-星期二 13:59:57->安全播出计时程序运行
+2022-09-13-星期二 13:59:59->配置自动加载成功！
+2022-09-13-星期二 14:00:05->退出程序
+2022-09-13-星期二 14:00:22->安全播出计时程序运行
+2022-09-13-星期二 14:00:22->安全播出计时程序运行
+2022-09-13-星期二 14:00:24->配置自动加载成功！
+2022-09-13-星期二 14:00:33->退出程序
+2022-09-13-星期二 14:00:55->安全播出计时程序运行
+2022-09-13-星期二 14:00:56->安全播出计时程序运行
+2022-09-13-星期二 14:00:58->配置自动加载成功！
+2022-09-13-星期二 14:01:09->退出程序
+2022-09-13-星期二 14:01:20->安全播出计时程序运行
+2022-09-13-星期二 14:01:21->安全播出计时程序运行
+2022-09-13-星期二 14:01:23->配置自动加载成功！
+2022-09-13-星期二 14:01:28->退出程序
+2022-09-13-星期二 14:01:35->安全播出计时程序运行
+2022-09-13-星期二 14:01:36->安全播出计时程序运行
+2022-09-13-星期二 14:01:38->配置自动加载成功！
+2022-09-13-星期二 14:01:42->退出程序
+2022-09-13-星期二 14:01:48->安全播出计时程序运行
+2022-09-13-星期二 14:01:49->安全播出计时程序运行
+2022-09-13-星期二 14:01:51->配置自动加载成功！
+2022-09-13-星期二 14:02:00->开始时间 = 2022-05-16-星期一 0:00:00,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 14:02:00->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 04:16 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 14:02:00->自动启动任务注册成功。
+2022-09-13-星期二 14:02:22->退出程序
+2022-09-13-星期二 14:05:02->安全播出计时程序运行
+2022-09-13-星期二 14:05:02->安全播出计时程序运行
+2022-09-13-星期二 14:05:04->配置自动加载成功！
+2022-09-13-星期二 14:05:12->开始时间 = 2022-05-16-星期一 0:00:00,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 14:05:12->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 04:16 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 14:05:12->自动启动任务注册成功。
+2022-09-13-星期二 14:05:16->退出程序
+2022-09-13-星期二 14:05:19->安全播出计时程序运行
+2022-09-13-星期二 14:05:19->安全播出计时程序运行
+2022-09-13-星期二 14:05:21->配置自动加载成功！
+2022-09-13-星期二 14:05:24->退出程序
+2022-09-13-星期二 14:06:39->安全播出计时程序运行
+2022-09-13-星期二 14:06:39->安全播出计时程序运行
+2022-09-13-星期二 14:06:42->配置自动加载成功！
+2022-09-13-星期二 14:06:48->开始时间 = 2022-05-16-星期一 0:00:00,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 14:06:48->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 04:16 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 14:06:48->自动启动任务注册成功。
+2022-09-13-星期二 14:07:18->退出程序
+2022-09-13-星期二 14:07:33->安全播出计时程序运行
+2022-09-13-星期二 14:07:33->安全播出计时程序运行
+2022-09-13-星期二 14:07:35->配置自动加载成功！
+2022-09-13-星期二 14:07:37->开始时间 = 2022-05-16-星期一 0:00:00,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 14:07:37->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 04:16 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 14:07:37->自动启动任务注册成功。
+2022-09-13-星期二 14:08:26->开始时间 = 2022-05-16-星期一 0:00:00,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 14:08:26->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 04:16 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 14:08:26->自动启动任务注册成功。
+2022-09-13-星期二 14:08:59->退出程序
+2022-09-13-星期二 14:17:13->安全播出计时程序运行
+2022-09-13-星期二 14:17:13->安全播出计时程序运行
+2022-09-13-星期二 14:17:16->配置自动加载成功！
+2022-09-13-星期二 14:17:24->开始时间 = 2022-05-16-星期一 0:00:00,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 14:17:24->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 04:16 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 14:17:24->自动启动任务注册成功。
+2022-09-13-星期二 14:17:27->退出程序
+2022-09-13-星期二 14:17:29->安全播出计时程序运行
+2022-09-13-星期二 14:17:29->安全播出计时程序运行
+2022-09-13-星期二 14:17:31->配置自动加载成功！
+2022-09-13-星期二 14:17:35->退出程序
+2022-09-13-星期二 14:18:25->安全播出计时程序运行
+2022-09-13-星期二 14:18:26->安全播出计时程序运行
+2022-09-13-星期二 14:18:28->配置自动加载成功！
+2022-09-13-星期二 14:18:30->开始时间 = 2022-05-16-星期一 0:00:00,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 14:18:30->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 04:16 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 14:18:30->自动启动任务注册成功。
+2022-09-13-星期二 14:19:00->开始时间 = 2022-05-16-星期一 0:00:00,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 14:19:00->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 04:16 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 14:19:00->自动启动任务注册成功。
+2022-09-13-星期二 14:19:02->退出程序
+2022-09-13-星期二 14:19:39->安全播出计时程序运行
+2022-09-13-星期二 14:19:39->安全播出计时程序运行
+2022-09-13-星期二 14:19:41->配置自动加载成功！
+2022-09-13-星期二 14:19:43->开始时间 = 2022-05-16-星期一 0:00:00,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 14:19:43->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 04:16 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 14:19:43->自动启动任务注册成功。
+2022-09-13-星期二 14:20:31->退出程序
+2022-09-13-星期二 14:27:22->安全播出计时程序运行
+2022-09-13-星期二 14:27:22->安全播出计时程序运行
+2022-09-13-星期二 14:27:24->配置自动加载成功！
+2022-09-13-星期二 14:27:32->开始时间 = 2022-05-16-星期一 0:00:00,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 14:27:32->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 04:16 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 14:27:32->自动启动任务注册成功。
+2022-09-13-星期二 14:27:35->开始时间 = 2022-05-16-星期一 0:00:00,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 14:27:35->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 04:16 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 14:27:35->自动启动任务注册成功。
+2022-09-13-星期二 14:28:05->开始时间 = 2022-05-16-星期一 0:00:00,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 14:28:05->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 04:16 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 14:28:05->自动启动任务注册成功。
+2022-09-13-星期二 14:28:39->开始时间 = 2022-05-16-星期一 0:00:00,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 14:28:39->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 04:16 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 14:28:39->自动启动任务注册成功。
+2022-09-13-星期二 14:29:09->开始时间 = 2022-05-16-星期一 0:00:00,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 14:29:09->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 04:16 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 14:29:09->自动启动任务注册成功。
+2022-09-13-星期二 14:29:40->开始时间 = 2022-05-16-星期一 0:00:00,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 14:29:40->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 04:16 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 14:29:40->自动启动任务注册成功。
+2022-09-13-星期二 14:30:12->开始时间 = 2022-05-16-星期一 0:00:00,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 14:30:13->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 04:16 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 14:30:13->自动启动任务注册成功。
+2022-09-13-星期二 14:30:30->退出程序
+2022-09-13-星期二 14:31:58->安全播出计时程序运行
+2022-09-13-星期二 14:31:58->安全播出计时程序运行
+2022-09-13-星期二 14:32:01->配置自动加载成功！
+2022-09-13-星期二 14:32:02->开始时间 = 2022-05-16-星期一 0:00:00,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 14:32:02->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 04:16 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 14:32:02->自动启动任务注册成功。
+2022-09-13-星期二 14:32:54->安全播出计时程序运行
+2022-09-13-星期二 14:32:54->安全播出计时程序运行
+2022-09-13-星期二 14:32:57->配置自动加载成功！
+2022-09-13-星期二 14:33:01->开始时间 = 2022-05-16-星期一 0:00:00,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 14:33:01->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 04:16 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 14:33:01->自动启动任务注册成功。
+2022-09-13-星期二 14:33:35->退出程序
+2022-09-13-星期二 14:33:41->开始时间 = 2022-05-16-星期一 0:00:00,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 14:33:41->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 04:16 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 14:33:41->自动启动任务注册成功。
+2022-09-13-星期二 14:34:08->开始时间 = 2022-05-16-星期一 0:00:00,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 14:34:08->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 04:16 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 14:34:08->自动启动任务注册成功。
+2022-09-13-星期二 14:34:35->开始时间 = 2022-05-16-星期一 0:00:00,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 14:34:35->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 04:16 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 14:34:35->自动启动任务注册成功。
+2022-09-13-星期二 14:35:02->开始时间 = 2022-05-16-星期一 0:00:00,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 14:35:02->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 04:16 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 14:35:02->自动启动任务注册成功。
+2022-09-13-星期二 14:35:28->开始时间 = 2022-05-16-星期一 0:00:00,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 14:35:28->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 04:16 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 14:35:28->自动启动任务注册成功。
+2022-09-13-星期二 14:38:37->安全播出计时程序运行
+2022-09-13-星期二 14:38:37->安全播出计时程序运行
+2022-09-13-星期二 14:38:40->配置自动加载成功！
+2022-09-13-星期二 14:38:42->开始时间 = 2022-05-16-星期一 0:00:00,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 14:38:43->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 04:16 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 14:38:43->自动启动任务注册成功。
+2022-09-13-星期二 14:39:13->开始时间 = 2022-05-16-星期一 0:00:00,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 14:39:13->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 04:16 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 14:39:13->自动启动任务注册成功。
+2022-09-13-星期二 14:39:33->退出程序
+2022-09-13-星期二 14:40:32->安全播出计时程序运行
+2022-09-13-星期二 14:40:32->安全播出计时程序运行
+2022-09-13-星期二 14:40:36->配置自动加载成功！
+2022-09-13-星期二 14:40:40->开始时间 = 2022-05-16-星期一 0:00:00,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 14:40:40->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 04:16 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 14:40:40->自动启动任务注册成功。
+2022-09-13-星期二 14:41:05->开始时间 = 2022-05-16-星期一 0:00:00,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 14:41:05->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 04:16 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 14:41:05->自动启动任务注册成功。
+2022-09-13-星期二 14:41:33->开始时间 = 2022-05-16-星期一 0:00:00,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 14:41:33->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 04:16 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 14:41:33->自动启动任务注册成功。
+2022-09-13-星期二 14:41:58->开始时间 = 2022-05-16-星期一 0:00:00,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 14:41:59->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 04:16 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 14:41:59->自动启动任务注册成功。
+2022-09-13-星期二 14:42:23->开始时间 = 2022-05-16-星期一 0:00:00,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 14:42:23->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 04:16 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 14:42:23->自动启动任务注册成功。
+2022-09-13-星期二 14:43:02->开始时间 = 2022-05-16-星期一 0:00:00,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 14:43:02->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 04:16 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 14:43:02->自动启动任务注册成功。
+2022-09-13-星期二 14:43:28->开始时间 = 2022-05-16-星期一 0:00:00,主文本 = 安全播出无事故累计,计时精度 = 秒钟
+2022-09-13-星期二 14:43:28->Microsoft Windows [版本 10.0.19044.1889]
+(c) Microsoft Corporation。保留所有权利。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>schtasks /create /tn "MySBTask" /tr "D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug\autorestart.bat" /sc DAILY /st 04:16 /f
+成功: 成功创建计划任务 "MySBTask"。
+
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug>exit
+
+2022-09-13-星期二 14:43:28->自动启动任务注册成功。
+2022-09-13-星期二 14:43:50->退出程序

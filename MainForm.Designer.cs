@@ -31,6 +31,7 @@
             System.Windows.Forms.TreeNode treeNode1 = new System.Windows.Forms.TreeNode("安播设置");
             System.Windows.Forms.TreeNode treeNode2 = new System.Windows.Forms.TreeNode("重保发布");
             System.Windows.Forms.TreeNode treeNode3 = new System.Windows.Forms.TreeNode("视频展示");
+            System.Windows.Forms.TreeNode treeNode4 = new System.Windows.Forms.TreeNode("倒计时");
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
@@ -83,10 +84,14 @@
             treeNode3.Name = "page3_btn";
             treeNode3.NodeFont = new System.Drawing.Font("点字倔强黑", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             treeNode3.Text = "视频展示";
+            treeNode4.Name = "page3_btn";
+            treeNode4.NodeFont = new System.Drawing.Font("点字倔强黑", 9F);
+            treeNode4.Text = "倒计时";
             this.Header.Nodes.AddRange(new System.Windows.Forms.TreeNode[] {
             treeNode1,
             treeNode2,
-            treeNode3});
+            treeNode3,
+            treeNode4});
             this.Header.NodeSize = new System.Drawing.Size(200, 45);
             this.Header.Size = new System.Drawing.Size(1165, 80);
             this.Header.TabIndex = 48;
