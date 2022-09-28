@@ -72,6 +72,12 @@
     <Compile Include="AutoLoad.Designer.cs">
       <DependentUpon>AutoLoad.cs</DependentUpon>
     </Compile>
+    <Compile Include="FifthScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FifthScreen.Designer.cs">
+      <DependentUpon>FifthScreen.cs</DependentUpon>
+    </Compile>
     <Compile Include="FirstScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,6 +136,12 @@
     <Compile Include="SubForm4.Designer.cs">
       <DependentUpon>SubForm4.cs</DependentUpon>
     </Compile>
+    <Compile Include="SubForm5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubForm5.Designer.cs">
+      <DependentUpon>SubForm5.cs</DependentUpon>
+    </Compile>
     <Compile Include="ThirdScreen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +151,9 @@
     <Compile Include="VlcPlayerBase.cs" />
     <EmbeddedResource Include="AutoLoad.resx">
       <DependentUpon>AutoLoad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FifthScreen.resx">
+      <DependentUpon>FifthScreen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FirstScreen.resx">
       <DependentUpon>FirstScreen.cs</DependentUpon>
@@ -176,6 +191,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SubForm4.resx">
       <DependentUpon>SubForm4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubForm5.resx">
+      <DependentUpon>SubForm5.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ThirdScreen.resx">
       <DependentUpon>ThirdScreen.cs</DependentUpon>

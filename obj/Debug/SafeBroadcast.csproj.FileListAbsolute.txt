@@ -25,3 +25,5 @@ D:\Microsoft Visual Studio\mycodes\SafeBroadcast\obj\Debug\SafeBroadcast.pdb
 D:\Microsoft Visual Studio\mycodes\SafeBroadcast\obj\Debug\SafeBroadcast.AutoLoad.resources
 D:\Microsoft Visual Studio\mycodes\SafeBroadcast\obj\Debug\SafeBroadcast.FourthScreen.resources
 D:\Microsoft Visual Studio\mycodes\SafeBroadcast\obj\Debug\SafeBroadcast.SubForm4.resources
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\obj\Debug\SafeBroadcast.SubForm5.resources
+D:\Microsoft Visual Studio\mycodes\SafeBroadcast\obj\Debug\SafeBroadcast.FifthScreen.resources

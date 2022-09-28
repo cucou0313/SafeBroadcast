@@ -25,8 +25,10 @@ namespace SafeBroadcast
         public static string vedio_filepath = "";
         public static int volume = 0;
         public static VlcPlayer.VlcPlayerBase MyVlc = null;
+
         //各子页的停留时间
-        public static int[] page_stay = new int[4];
+        public static int[] page_stay = new int[5];
+
         //自重启时间
         public static int restart_hour = 4;
         public static int restart_min = 15;
@@ -41,6 +43,9 @@ namespace SafeBroadcast
         public static string count_down_bg = "";
         //是否启用计时
         public static bool is_use_count_down = true;
+
+        //重保期信息背景图片
+        public static string info_bg = "";
 
         /// <summary>
         /// 计算当天为星期几

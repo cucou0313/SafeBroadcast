@@ -42,6 +42,11 @@ namespace SafeBroadcast
                             AddPage(new FourthScreen());
                             only_first = true;
                             break;
+                        case 4:
+                            //重保期发布
+                            AddPage(new FifthScreen());
+                            only_first = true;
+                            break;
                     }
                 }
             }

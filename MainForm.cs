@@ -44,6 +44,9 @@ namespace SafeBroadcast
             pageIndex = 1004;
             Header.SetNodePageIndex(Header.Nodes[3], pageIndex);
             Header.SetNodeSymbol(Header.Nodes[3], 361683);
+            pageIndex = 1005;
+            Header.SetNodePageIndex(Header.Nodes[4], pageIndex);
+            Header.SetNodeSymbol(Header.Nodes[4], 361683);
         }
 
         private void MainForm_Load(object sender, EventArgs e)
@@ -52,6 +55,7 @@ namespace SafeBroadcast
             AddPage(new SubForm2());
             AddPage(new SubForm3());
             AddPage(new SubForm4());
+            AddPage(new SubForm5());
             SelectPage(1001);
 
             //弹出自动加载框
@@ -63,7 +67,7 @@ namespace SafeBroadcast
                 {
                     PublicArgs.is_auto_load = false;
                     //向子窗体发送自动加载请求
-                    if (SetParamToPage(1001, 0, "自动加载") && SetParamToPage(1002, 0, "自动加载") && SetParamToPage(1003, 0, "自动加载") && SetParamToPage(1004, 0, "自动加载"))
+                    if (SetParamToPage(1001, 0, "自动加载") && SetParamToPage(1002, 0, "自动加载") && SetParamToPage(1003, 0, "自动加载") && SetParamToPage(1004, 0, "自动加载") && SetParamToPage(1005, 0, "自动加载"))
                     {
                         Log.log("配置自动加载成功！");
                         //夜间重启，回收资源，防止卡死
@@ -91,7 +95,7 @@ namespace SafeBroadcast
         {
             //SetParamToPage
             //可以向指定子页面发送消息
-            if (SetParamToPage(1001, 0, "第1屏参数") && SetParamToPage(1002, 0, "第2屏参数") && SetParamToPage(1003, 0, "第3屏参数") && SetParamToPage(1004, 0, "第4屏参数"))
+            if (SetParamToPage(1001, 0, "第1屏参数") && SetParamToPage(1002, 0, "第2屏参数") && SetParamToPage(1003, 0, "第3屏参数") && SetParamToPage(1004, 0, "第4屏参数") && SetParamToPage(1005, 0, "第5屏参数"))
             {
                 //注册自启任务
                 register_task();
