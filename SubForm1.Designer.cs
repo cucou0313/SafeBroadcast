@@ -34,6 +34,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.uiGroupBox1 = new Sunny.UI.UIGroupBox();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.label24 = new System.Windows.Forms.Label();
             this.uiSwitch1 = new Sunny.UI.UISwitch();
             this.label13 = new System.Windows.Forms.Label();
             this.Page1_UpDown = new Sunny.UI.UIIntegerUpDown();
@@ -49,8 +51,7 @@
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.Duty_ColorPicker = new Sunny.UI.UIColorPicker();
             this.uiGroupBox2 = new Sunny.UI.UIGroupBox();
-            this.editor_textBox = new System.Windows.Forms.TextBox();
-            this.manager_textBox = new System.Windows.Forms.TextBox();
+            this.night_textBox = new System.Windows.Forms.TextBox();
             this.day7_comboBox5 = new System.Windows.Forms.ComboBox();
             this.day6_comboBox5 = new System.Windows.Forms.ComboBox();
             this.day5_comboBox5 = new System.Windows.Forms.ComboBox();
@@ -58,8 +59,7 @@
             this.day3_comboBox5 = new System.Windows.Forms.ComboBox();
             this.day2_comboBox5 = new System.Windows.Forms.ComboBox();
             this.day1_comboBox5 = new System.Windows.Forms.ComboBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.tech_textBox = new System.Windows.Forms.TextBox();
+            this.day_textBox = new System.Windows.Forms.TextBox();
             this.director_textBox = new System.Windows.Forms.TextBox();
             this.day7_comboBox4 = new System.Windows.Forms.ComboBox();
             this.day7_comboBox3 = new System.Windows.Forms.ComboBox();
@@ -113,8 +113,6 @@
             this.main_label = new System.Windows.Forms.TextBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
-            this.label24 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.uiGroupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -196,11 +194,36 @@
             this.uiGroupBox1.Padding = new System.Windows.Forms.Padding(0, 32, 0, 0);
             this.uiGroupBox1.Radius = 20;
             this.uiGroupBox1.RectSize = 2;
-            this.uiGroupBox1.Size = new System.Drawing.Size(1900, 128);
+            this.uiGroupBox1.Size = new System.Drawing.Size(1600, 128);
             this.uiGroupBox1.TabIndex = 57;
             this.uiGroupBox1.Text = "设置";
             this.uiGroupBox1.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.uiGroupBox1.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.CalendarFont = new System.Drawing.Font("微软雅黑", 12F);
+            this.dateTimePicker2.CustomFormat = "HH:mm";
+            this.dateTimePicker2.Font = new System.Drawing.Font("微软雅黑", 12F);
+            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dateTimePicker2.Location = new System.Drawing.Point(1312, 37);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(91, 29);
+            this.dateTimePicker2.TabIndex = 169;
+            this.toolTip1.SetToolTip(this.dateTimePicker2, "每日软件自重启时间");
+            this.dateTimePicker2.Value = new System.DateTime(2022, 7, 18, 4, 15, 0, 0);
+            this.dateTimePicker2.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged);
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Font = new System.Drawing.Font("微软雅黑", 13.8F, System.Drawing.FontStyle.Bold);
+            this.label24.Location = new System.Drawing.Point(1208, 40);
+            this.label24.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(107, 26);
+            this.label24.TabIndex = 168;
+            this.label24.Text = "重启设置：";
             // 
             // uiSwitch1
             // 
@@ -404,8 +427,7 @@
             // uiGroupBox2
             // 
             this.uiGroupBox2.Controls.Add(this.Duty_ColorPicker);
-            this.uiGroupBox2.Controls.Add(this.editor_textBox);
-            this.uiGroupBox2.Controls.Add(this.manager_textBox);
+            this.uiGroupBox2.Controls.Add(this.night_textBox);
             this.uiGroupBox2.Controls.Add(this.day7_comboBox5);
             this.uiGroupBox2.Controls.Add(this.day6_comboBox5);
             this.uiGroupBox2.Controls.Add(this.day5_comboBox5);
@@ -413,8 +435,7 @@
             this.uiGroupBox2.Controls.Add(this.day3_comboBox5);
             this.uiGroupBox2.Controls.Add(this.day2_comboBox5);
             this.uiGroupBox2.Controls.Add(this.day1_comboBox5);
-            this.uiGroupBox2.Controls.Add(this.label11);
-            this.uiGroupBox2.Controls.Add(this.tech_textBox);
+            this.uiGroupBox2.Controls.Add(this.day_textBox);
             this.uiGroupBox2.Controls.Add(this.director_textBox);
             this.uiGroupBox2.Controls.Add(this.day7_comboBox4);
             this.uiGroupBox2.Controls.Add(this.day7_comboBox3);
@@ -471,39 +492,28 @@
             this.uiGroupBox2.Padding = new System.Windows.Forms.Padding(0, 32, 0, 0);
             this.uiGroupBox2.Radius = 20;
             this.uiGroupBox2.RectSize = 2;
-            this.uiGroupBox2.Size = new System.Drawing.Size(1900, 277);
+            this.uiGroupBox2.Size = new System.Drawing.Size(1600, 277);
             this.uiGroupBox2.TabIndex = 58;
             this.uiGroupBox2.Text = "值班";
             this.uiGroupBox2.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
             this.uiGroupBox2.ZoomScaleRect = new System.Drawing.Rectangle(0, 0, 0, 0);
             // 
-            // editor_textBox
+            // night_textBox
             // 
-            this.editor_textBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
-            this.editor_textBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.editor_textBox.Location = new System.Drawing.Point(86, 242);
-            this.editor_textBox.Name = "editor_textBox";
-            this.editor_textBox.Size = new System.Drawing.Size(88, 25);
-            this.editor_textBox.TabIndex = 167;
-            this.editor_textBox.Text = "编播值班";
-            this.editor_textBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // manager_textBox
-            // 
-            this.manager_textBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
-            this.manager_textBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.manager_textBox.Location = new System.Drawing.Point(86, 198);
-            this.manager_textBox.Name = "manager_textBox";
-            this.manager_textBox.Size = new System.Drawing.Size(88, 25);
-            this.manager_textBox.TabIndex = 166;
-            this.manager_textBox.Text = "网管值班";
-            this.manager_textBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.night_textBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
+            this.night_textBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.night_textBox.Location = new System.Drawing.Point(86, 218);
+            this.night_textBox.Name = "night_textBox";
+            this.night_textBox.Size = new System.Drawing.Size(88, 25);
+            this.night_textBox.TabIndex = 166;
+            this.night_textBox.Text = "技术晚班";
+            this.night_textBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // day7_comboBox5
             // 
             this.day7_comboBox5.Font = new System.Drawing.Font("微软雅黑", 14F);
             this.day7_comboBox5.FormattingEnabled = true;
-            this.day7_comboBox5.Location = new System.Drawing.Point(1027, 238);
+            this.day7_comboBox5.Location = new System.Drawing.Point(1027, 235);
             this.day7_comboBox5.Name = "day7_comboBox5";
             this.day7_comboBox5.Size = new System.Drawing.Size(128, 33);
             this.day7_comboBox5.TabIndex = 165;
@@ -512,7 +522,7 @@
             // 
             this.day6_comboBox5.Font = new System.Drawing.Font("微软雅黑", 14F);
             this.day6_comboBox5.FormattingEnabled = true;
-            this.day6_comboBox5.Location = new System.Drawing.Point(885, 238);
+            this.day6_comboBox5.Location = new System.Drawing.Point(885, 235);
             this.day6_comboBox5.Name = "day6_comboBox5";
             this.day6_comboBox5.Size = new System.Drawing.Size(128, 33);
             this.day6_comboBox5.TabIndex = 164;
@@ -521,7 +531,7 @@
             // 
             this.day5_comboBox5.Font = new System.Drawing.Font("微软雅黑", 14F);
             this.day5_comboBox5.FormattingEnabled = true;
-            this.day5_comboBox5.Location = new System.Drawing.Point(742, 238);
+            this.day5_comboBox5.Location = new System.Drawing.Point(742, 235);
             this.day5_comboBox5.Name = "day5_comboBox5";
             this.day5_comboBox5.Size = new System.Drawing.Size(128, 33);
             this.day5_comboBox5.TabIndex = 163;
@@ -530,7 +540,7 @@
             // 
             this.day4_comboBox5.Font = new System.Drawing.Font("微软雅黑", 14F);
             this.day4_comboBox5.FormattingEnabled = true;
-            this.day4_comboBox5.Location = new System.Drawing.Point(602, 238);
+            this.day4_comboBox5.Location = new System.Drawing.Point(602, 235);
             this.day4_comboBox5.Name = "day4_comboBox5";
             this.day4_comboBox5.Size = new System.Drawing.Size(128, 33);
             this.day4_comboBox5.TabIndex = 162;
@@ -539,7 +549,7 @@
             // 
             this.day3_comboBox5.Font = new System.Drawing.Font("微软雅黑", 14F);
             this.day3_comboBox5.FormattingEnabled = true;
-            this.day3_comboBox5.Location = new System.Drawing.Point(463, 238);
+            this.day3_comboBox5.Location = new System.Drawing.Point(463, 235);
             this.day3_comboBox5.Name = "day3_comboBox5";
             this.day3_comboBox5.Size = new System.Drawing.Size(128, 33);
             this.day3_comboBox5.TabIndex = 161;
@@ -548,7 +558,7 @@
             // 
             this.day2_comboBox5.Font = new System.Drawing.Font("微软雅黑", 14F);
             this.day2_comboBox5.FormattingEnabled = true;
-            this.day2_comboBox5.Location = new System.Drawing.Point(327, 238);
+            this.day2_comboBox5.Location = new System.Drawing.Point(327, 235);
             this.day2_comboBox5.Name = "day2_comboBox5";
             this.day2_comboBox5.Size = new System.Drawing.Size(128, 33);
             this.day2_comboBox5.TabIndex = 160;
@@ -557,31 +567,21 @@
             // 
             this.day1_comboBox5.Font = new System.Drawing.Font("微软雅黑", 14F);
             this.day1_comboBox5.FormattingEnabled = true;
-            this.day1_comboBox5.Location = new System.Drawing.Point(190, 238);
+            this.day1_comboBox5.Location = new System.Drawing.Point(190, 235);
             this.day1_comboBox5.Name = "day1_comboBox5";
             this.day1_comboBox5.Size = new System.Drawing.Size(128, 33);
             this.day1_comboBox5.TabIndex = 159;
             // 
-            // label11
+            // day_textBox
             // 
-            this.label11.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label11.Location = new System.Drawing.Point(185, 232);
-            this.label11.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(980, 1);
-            this.label11.TabIndex = 158;
-            // 
-            // tech_textBox
-            // 
-            this.tech_textBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
-            this.tech_textBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.tech_textBox.Location = new System.Drawing.Point(86, 133);
-            this.tech_textBox.Name = "tech_textBox";
-            this.tech_textBox.Size = new System.Drawing.Size(88, 25);
-            this.tech_textBox.TabIndex = 157;
-            this.tech_textBox.Text = "技术带班";
-            this.tech_textBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.day_textBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(243)))), ((int)(((byte)(249)))), ((int)(((byte)(255)))));
+            this.day_textBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.day_textBox.Location = new System.Drawing.Point(86, 133);
+            this.day_textBox.Name = "day_textBox";
+            this.day_textBox.Size = new System.Drawing.Size(88, 25);
+            this.day_textBox.TabIndex = 157;
+            this.day_textBox.Text = "技术白班";
+            this.day_textBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // director_textBox
             // 
@@ -1032,7 +1032,7 @@
             this.uiGroupBox3.Padding = new System.Windows.Forms.Padding(80, 32, 80, 0);
             this.uiGroupBox3.Radius = 20;
             this.uiGroupBox3.RectSize = 2;
-            this.uiGroupBox3.Size = new System.Drawing.Size(1900, 655);
+            this.uiGroupBox3.Size = new System.Drawing.Size(1600, 495);
             this.uiGroupBox3.TabIndex = 59;
             this.uiGroupBox3.Text = "预览";
             this.uiGroupBox3.TextAlignment = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1047,7 +1047,7 @@
             this.duty_label.ForeColor = System.Drawing.Color.Cyan;
             this.duty_label.Location = new System.Drawing.Point(80, 354);
             this.duty_label.Name = "duty_label";
-            this.duty_label.Size = new System.Drawing.Size(1740, 60);
+            this.duty_label.Size = new System.Drawing.Size(1440, 60);
             this.duty_label.TabIndex = 49;
             this.duty_label.Text = "值班主任:xxx  技术带班:xxx，xxx  网管值班:xxx  编播值班:xxx";
             this.duty_label.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1061,7 +1061,7 @@
             this.time_label.ForeColor = System.Drawing.Color.Lime;
             this.time_label.Location = new System.Drawing.Point(80, 178);
             this.time_label.Name = "time_label";
-            this.time_label.Size = new System.Drawing.Size(1740, 176);
+            this.time_label.Size = new System.Drawing.Size(1440, 176);
             this.time_label.TabIndex = 48;
             this.time_label.Text = "30天";
             this.time_label.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1075,7 +1075,7 @@
             this.main_label.ForeColor = System.Drawing.Color.Crimson;
             this.main_label.Location = new System.Drawing.Point(80, 32);
             this.main_label.Name = "main_label";
-            this.main_label.Size = new System.Drawing.Size(1740, 146);
+            this.main_label.Size = new System.Drawing.Size(1440, 146);
             this.main_label.TabIndex = 47;
             this.main_label.Text = "安全播出无事故累计";
             this.main_label.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1091,35 +1091,10 @@
             this.pictureBox5.TabIndex = 46;
             this.pictureBox5.TabStop = false;
             // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Font = new System.Drawing.Font("微软雅黑", 13.8F, System.Drawing.FontStyle.Bold);
-            this.label24.Location = new System.Drawing.Point(1208, 40);
-            this.label24.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(107, 26);
-            this.label24.TabIndex = 168;
-            this.label24.Text = "重启设置：";
-            // 
-            // dateTimePicker2
-            // 
-            this.dateTimePicker2.CalendarFont = new System.Drawing.Font("微软雅黑", 12F);
-            this.dateTimePicker2.CustomFormat = "HH:mm";
-            this.dateTimePicker2.Font = new System.Drawing.Font("微软雅黑", 12F);
-            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dateTimePicker2.Location = new System.Drawing.Point(1312, 37);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(91, 29);
-            this.dateTimePicker2.TabIndex = 169;
-            this.toolTip1.SetToolTip(this.dateTimePicker2, "每日软件自重启时间");
-            this.dateTimePicker2.Value = new System.DateTime(2022, 7, 18, 4, 15, 0, 0);
-            this.dateTimePicker2.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged);
-            // 
             // SubForm1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.ClientSize = new System.Drawing.Size(1920, 1080);
+            this.ClientSize = new System.Drawing.Size(1620, 920);
             this.Controls.Add(this.uiGroupBox3);
             this.Controls.Add(this.uiGroupBox2);
             this.Controls.Add(this.uiGroupBox1);
@@ -1161,8 +1136,7 @@
         private System.Windows.Forms.Label label3;
         private Sunny.UI.UIGroupBox uiGroupBox2;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.TextBox editor_textBox;
-        private System.Windows.Forms.TextBox manager_textBox;
+        private System.Windows.Forms.TextBox night_textBox;
         private System.Windows.Forms.ComboBox day7_comboBox5;
         private System.Windows.Forms.ComboBox day6_comboBox5;
         private System.Windows.Forms.ComboBox day5_comboBox5;
@@ -1170,8 +1144,7 @@
         private System.Windows.Forms.ComboBox day3_comboBox5;
         private System.Windows.Forms.ComboBox day2_comboBox5;
         private System.Windows.Forms.ComboBox day1_comboBox5;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox tech_textBox;
+        private System.Windows.Forms.TextBox day_textBox;
         private System.Windows.Forms.TextBox director_textBox;
         private System.Windows.Forms.ComboBox day7_comboBox4;
         private System.Windows.Forms.ComboBox day7_comboBox3;

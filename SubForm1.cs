@@ -44,13 +44,9 @@ namespace SafeBroadcast
                     for (int j = 1; j < 8; j++)
                     {
                         int row = i;
-                        if (i == 2 || i == 3)
+                        if (i > 1)
                         {
                             row = 2;
-                        }
-                        else if (i > 3)
-                        {
-                            row = i - 1;
                         }
 
                         string ctrl_name = string.Format("day{0}_comboBox{1}", j, i);
@@ -175,16 +171,16 @@ namespace SafeBroadcast
                                             context = string.Format("{0}：{1}    ", director_textBox.Text, cb[0].Text);
                                             break;
                                         case 2:
-                                            context = string.Format("{0}：{1}, ", tech_textBox.Text, cb[0].Text);
+                                            context = string.Format("{0}：{1}, ", day_textBox.Text, cb[0].Text);
                                             break;
                                         case 3:
                                             context = cb[0].Text;
                                             break;
                                         case 4:
-                                            context = string.Format("    {0}：{1}", manager_textBox.Text, cb[0].Text);
+                                            context = string.Format("    {0}：{1}, ", night_textBox.Text, cb[0].Text);
                                             break;
                                         case 5:
-                                            context = string.Format("   {0}：{1}", editor_textBox.Text, cb[0].Text);
+                                            context = cb[0].Text;
                                             break;
                                     }
                                     day_duty += context;

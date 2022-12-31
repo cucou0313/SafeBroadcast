@@ -1,2 +1,2 @@
-cd /d D:\Microsoft Visual Studio\mycodes\SafeBroadcast\bin\Debug
+cd /d D:\Visual Studio Code\SafeBroadcast\bin\Debug
 start SafeBroadcast.exe
